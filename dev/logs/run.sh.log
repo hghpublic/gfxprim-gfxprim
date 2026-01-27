@@ -1,0 +1,941 @@
+[H[2J[3J
+Running bogoman ...
+DEBUG 1:bogoman_loader.c:bogoman_load:218:
+	Have map 21x8
+/workspaces/gfxprim-gfxprim
+
+Running backend_cursor ...
+/workspaces/gfxprim-gfxprim
+
+Running backend_example ...
+/workspaces/gfxprim-gfxprim
+
+Running backend_tasks_example ...
+/workspaces/gfxprim-gfxprim
+
+Running backend_timers_example ...
+/workspaces/gfxprim-gfxprim
+
+Running bbox ...
+[0, 0] w=2 h=2 & [0, 0] w=1 h=1 = 1
+[0, 0] w=2 h=2 & [0, 3] w=1 h=1 = 0
+[0, 0] w=2 h=2 & [2, 0] w=1 h=1 = 1
+[0, 0] w=2 h=2 & [-1, -2] w=1 h=1 = 0
+/workspaces/gfxprim-gfxprim
+
+Running blittest ...
+/workspaces/gfxprim-gfxprim
+
+Running convolution ...
+Loading 'ball.ppm' 0.0%Loading 'ball.ppm' 100.0%
+Linear Convolution 'ball.ppm' 0.0%Linear Convolution 'ball.ppm' 100.0%
+Saving 'out.png' 0.0%Saving 'out.png' 100.0%
+/workspaces/gfxprim-gfxprim
+
+Running data_storage ...
+Empty storage -----------------------
+Data Root = {
+}
+-------------------------------------
+
+Flat storage ------------------------
+Data Root = {
+ dpi         : 300
+ orientation : 'top-down'
+}
+-------------------------------------
+
+Recursive storage -------------------
+Data Root = {
+ dpi         : 300
+ orientation : 'top-down'
+ flags = {
+  compression_level : 10
+ }
+}
+-------------------------------------
+
+dpi : 300
+/workspaces/gfxprim-gfxprim
+
+Running debug_handler ...
+W: debug_handler.c->main():45: This is a warning
+F: debug_handler.c->main():46: This is a fatal condition
+1: gp_pixmap.c->gp_pixmap_alloc_ex():46: Allocating pixmap 1000 x 1000 - RGB101010
+1: gp_blur.c->gp_filter_gaussian_blur_raw():67: Gaussian blur x_sigma=10.000 y_sigma=10.000 kernel 61x61 image 1000x1000
+1: gp_linear_convolution.gen.c->gp_filter_hlinear_convolution_raw():2436: Horizontal linear convolution kernel width 61 offset 0x0 rectangle 1000x1000 src->gamma (nil) dst->gamma (nil)
+1: gp_linear_convolution.gen.c->gp_filter_vlinear_convolution_raw():4956: Vertical linear convolution kernel width 61 offset 0x0 rectangle 1000x1000
+1: gp_pixmap.c->gp_pixmap_free():131: Freeing pixmap (0xaaaae8e032b0)
+/workspaces/gfxprim-gfxprim
+
+Running dpi_check ...
+/workspaces/gfxprim-gfxprim
+
+Running draw_glyph ...
+/workspaces/gfxprim-gfxprim
+
+Running elf_note ...
+Note type = 0000:
+ desc=NOTE 2                          
+Note type = 0001:
+ val=66 desc=test                            
+/workspaces/gfxprim-gfxprim
+
+Running fileview ...
+/workspaces/gfxprim-gfxprim
+
+Running filters_symmetry ...
+/workspaces/gfxprim-gfxprim
+
+Running fonttest ...
+Font 'gfxprim Regular' properties:
+    Height: ascent: 9, descent: 2
+    Max advance_x: 9
+    Average advance_x: 9
+    Glyph bitmap format: 1BPP
+    Bounding box width: 9, heigth: 11
+Properties of the character 'a':
+   bitmap width: 6, height: 11
+          bearing_x: 0 bearing_y 9
+          advance_x: 7
+Properties of the character 'm':
+   bitmap width: 7, height: 11
+          bearing_x: 0 bearing_y 9
+          advance_x: 8
+Properties of the character '0':
+   bitmap width: 6, height: 11
+          bearing_x: 0 bearing_y 9
+          advance_x: 7
+/workspaces/gfxprim-gfxprim
+
+Running gaussian_noise ...
+/workspaces/gfxprim-gfxprim
+
+Running gfx_koch ...
+/workspaces/gfxprim-gfxprim
+
+Running input_example ...
+/workspaces/gfxprim-gfxprim
+
+Running json_writer ...
+{
+ "object": {
+  "int_val01": 0,
+  "int_int02": 100,
+  "no_value": null
+ },
+ "bar": {},
+ "buzz": {},
+ "array": [
+  0,
+  1,
+  2
+ ]
+}/workspaces/gfxprim-gfxprim
+
+Running json_writer_file ...
+JSON written into 'out.json'
+/workspaces/gfxprim-gfxprim
+
+Running koch ...
+/workspaces/gfxprim-gfxprim
+
+Running linetest ...
+/workspaces/gfxprim-gfxprim
+
+Running loaders ...
+Loading 'ball.ppm' 0.0%Loading 'ball.ppm' 100.0%
+Saving 'loaders.out.png' 0.0%Saving 'loaders.out.png' 100.0%
+/workspaces/gfxprim-gfxprim
+
+Running loaders_example ...
+Takes an image as an parameter
+/workspaces/gfxprim-gfxprim
+
+Running loaders_register ...
+Format: JPEG
+Read:	Yes
+Write:	Yes
+Write Pixel Types: BGR888 G8 
+Match:	Yes
+Extensions: jpg jpeg 
+
+Format: Portable Network Graphics
+Read:	Yes
+Write:	Yes
+Write Pixel Types: BGR888 G1_UB G2_UB G4_UB G8 G16 RGBA8888 
+Match:	Yes
+Extensions: png 
+
+Format: webp
+Read:	Yes
+Write:	Yes
+Write Pixel Types: BGR888 
+Match:	Yes
+Extensions: webp 
+
+Format: Tag Image File Format
+Read:	Yes
+Write:	Yes
+Write Pixel Types: BGR888 G1_UB G2_UB G4_UB G8 
+Match:	Yes
+Extensions: tif tiff 
+
+Format: Graphics Interchange Format
+Read:	Yes
+Write:	No
+Match:	Yes
+Extensions: gif 
+
+Format: BMP
+Read:	Yes
+Write:	Yes
+Write Pixel Types: RGB888 
+Match:	Yes
+Extensions: bmp dib 
+
+Format: Netpbm portable Bitmap
+Read:	Yes
+Write:	Yes
+Write Pixel Types: G1_UB 
+Match:	Yes
+Extensions: pbm 
+
+Format: Netpbm portable Graymap
+Read:	Yes
+Write:	Yes
+Write Pixel Types: G1_UB G2_UB G4_UB G8 
+Match:	Yes
+Extensions: pgm 
+
+Format: Netpbm portable Pixmap
+Read:	Yes
+Write:	Yes
+Write Pixel Types: RGB888 
+Match:	Yes
+Extensions: ppm 
+
+Format: Netpbm portable Anymap
+Read:	Yes
+Write:	Yes
+Write Pixel Types: G1_UB G2_UB G4_UB G8 RGB888 
+Match:	No
+Extensions: pnm 
+
+Format: JPEG 2000
+Read:	No
+Write:	No
+Match:	Yes
+Extensions: jp2 jpx 
+
+Format: ZSoft PCX
+Read:	Yes
+Write:	No
+Match:	Yes
+Extensions: pcx 
+
+Format: Paint Shop Pro Image
+Read:	Yes
+Write:	No
+Match:	Yes
+Extensions: psp pspimage 
+
+Format: Adobe Photoshop Image
+Read:	Yes
+Write:	No
+Match:	Yes
+Extensions: psd 
+
+Format: ICO
+Read:	Yes
+Write:	No
+Match:	Yes
+Extensions: ico 
+
+Format: heif
+Read:	No
+Write:	No
+Match:	Yes
+Extensions: heic heif avif 
+
+Format: ASCII Art
+Read:	No
+Write:	Yes
+Write Pixel Types: G4_UB 
+Match:	No
+Extensions: txt 
+
+
+Saving to test.txt
+/workspaces/gfxprim-gfxprim
+
+Running matrix ...
+Initial 3x3 matrix: gp_matrix { .unit = 4, .length = 6, .capacity = 8, .payload = [
+ 	1	1
+	2	2
+	3	3
+]}
+Inserted 2 columns at 1: gp_matrix { .unit = 4, .length = 12, .capacity = 16, .payload = [
+ 	1	0	0	1
+	2	0	0	2
+	3	0	0	3
+]}
+Deleted 1 column at 1: gp_matrix { .unit = 4, .length = 9, .capacity = 16, .payload = [
+ 	1	0	1
+	2	0	2
+	3	0	3
+]}
+Inserted 2 rows at 1: gp_matrix { .unit = 4, .length = 15, .capacity = 16, .payload = [
+ 	1	0	1
+	0	0	0
+	0	0	0
+	2	0	2
+	3	0	3
+]}
+Deleted 1 column at 1: gp_matrix { .unit = 4, .length = 10, .capacity = 16, .payload = [
+ 	1	1
+	0	0
+	0	0
+	2	2
+	3	3
+]}
+Deleted 2 rows at 1: gp_matrix { .unit = 4, .length = 6, .capacity = 8, .payload = [
+ 	1	1
+	2	2
+	3	3
+]}
+/workspaces/gfxprim-gfxprim
+
+Running memory_io ...
+/workspaces/gfxprim-gfxprim
+
+Running meta_data ...
+Takes an image(s) as parameter(s)
+/workspaces/gfxprim-gfxprim
+
+Running pretty_print ...
+RGB888 0xffffff R=255 G=255 B=255
+Pixmap info
+------------
+Size	100x100
+BPP	24
+BPR	300
+Pixel	RGB888 (4)
+Offset	0 (only unaligned pixel types)
+Flags	axes_swap=0 x_swap=0 y_swap=0 pixels_allocated=1
+/workspaces/gfxprim-gfxprim
+
+Running proxy_backend ...
+/workspaces/gfxprim-gfxprim
+
+Running randomshapetest ...
+/workspaces/gfxprim-gfxprim
+
+Running SDL2_glue ...
+/workspaces/gfxprim-gfxprim
+
+Running shapetest ...
+/workspaces/gfxprim-gfxprim
+
+Running showimage ...
+Takes image as an argument
+/workspaces/gfxprim-gfxprim
+
+Running textaligntest ...
+/workspaces/gfxprim-gfxprim
+
+Running timers ...
+1: gp_debug.c:gp_debug_print():58: GFXprim library version 1.0.0-rc1
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Oneshot (now is 0) expires after 30 at 30 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Recurrent (now is 0) expires after 0 at 0 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Random (now is 0) expires after 10 at 10 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer10 (now is 0) expires after 10 at 10 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer9 (now is 0) expires after 9 at 9 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer8 (now is 0) expires after 8 at 8 in_callback=1
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer7 (now is 0) expires after 7 at 7 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer6 (now is 0) expires after 6 at 6 in_callback=1
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer5 (now is 0) expires after 5 at 5 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer4 (now is 0) expires after 4 at 4 in_callback=1
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer3 (now is 0) expires after 3 at 3 in_callback=0
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer2 (now is 0) expires after 2 at 2 in_callback=1
+  3: gp_timer.c:gp_timer_queue_ins():56: Inserting timer Timer1 (now is 0) expires after 1 at 1 in_callback=0
+  3: gp_timer.c:gp_timer_queue_rem():81: Removing timer Timer1 from queue in_callback=0
+  3: gp_timer.c:process_top():117: Timer Recurrent expired at 0 now is 0
+  3: gp_timer.c:process_top():141: Rescheduling timer 'Recurrent' after 4 expires at 4
+  3: gp_timer.c:process_top():117: Timer Timer3 expired at 3 now is 3
+  3: gp_timer.c:process_top():117: Timer Recurrent expired at 4 now is 6
+  3: gp_timer.c:process_top():141: Rescheduling timer 'Recurrent' after 4 expires at 10
+  3: gp_timer.c:process_top():117: Timer Timer5 expired at 5 now is 6
+Segmentation fault
+/workspaces/gfxprim-gfxprim
+
+Running unicodetest ...
+/workspaces/gfxprim-gfxprim
+
+Running update_rect_test ...
+/workspaces/gfxprim-gfxprim
+
+Running v4l2_grab ...
+
+C stack trace (most recent call first):
+/usr/local/lib/libgfxprim.so.1(gp_debug_print_cstack+0x3c)[0xffff9f28911c]
+/usr/local/lib/libgfxprim.so.1(gp_debug_print+0x290)[0xffff9f28a93c]
+/usr/local/lib/libgfxprim-grabbers.so.1(gp_grabber_v4l2_init+0x318)[0xffff9f2013c4]
+./v4l2_grab(+0xe24)[0xaaaab5700e24]
+/lib/aarch64-linux-gnu/libc.so.6(+0x284c4)[0xffff9f0184c4]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98)[0xffff9f018598]
+./v4l2_grab(+0xf30)[0xaaaab5700f30]
+*** WARNING: gp_v4l2.c:gp_grabber_v4l2_init():242: Failed to open V4L2 grabber '/dev/video0'
+Failed to initalize grabber '/dev/video0': No such file or directory
+/workspaces/gfxprim-gfxprim
+
+Running v4l2_show ...
+
+C stack trace (most recent call first):
+/usr/local/lib/libgfxprim.so.1(gp_debug_print_cstack+0x3c)[0xffffb612911c]
+/usr/local/lib/libgfxprim.so.1(gp_debug_print+0x290)[0xffffb612a93c]
+/usr/local/lib/libgfxprim-grabbers.so.1(gp_grabber_v4l2_init+0x318)[0xffffb60a13c4]
+./v4l2_show(main+0x190)[0xaaaae4c91150]
+/lib/aarch64-linux-gnu/libc.so.6(+0x284c4)[0xffffb5e684c4]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98)[0xffffb5e68598]
+./v4l2_show(+0x1430)[0xaaaae4c91430]
+*** WARNING: gp_v4l2.c:gp_grabber_v4l2_init():242: Failed to open V4L2 grabber '/dev/video0'
+Failed to initalize grabber '/dev/video0': No such file or directory
+/workspaces/gfxprim-gfxprim
+
+Running vector ...
+Initial range (1,10): gp_vec { .unit = 4, .capacity = 16, .length = 10, .payload = [
+ 	0	= 1
+	1	= 2
+	2	= 3
+	3	= 4
+	4	= 5
+	5	= 6
+	6	= 7
+	7	= 8
+	8	= 9
+	9	= 10
+	... +6 unused capacity
+]}
+
+Insert 0: gp_vec { .unit = 4, .capacity = 16, .length = 11, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= 4
+	5	= 5
+	6	= 6
+	7	= 7
+	8	= 8
+	9	= 9
+	10	= 10
+	... +5 unused capacity
+]}
+
+Push 11: gp_vec { .unit = 4, .capacity = 16, .length = 12, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= 4
+	5	= 5
+	6	= 6
+	7	= 7
+	8	= 8
+	9	= 9
+	10	= 10
+	11	= 11
+	... +4 unused capacity
+]}
+
+Insert -1 at 4: gp_vec { .unit = 4, .capacity = 16, .length = 13, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= -1
+	5	= 4
+	6	= 5
+	7	= 6
+	8	= 7
+	9	= 8
+	10	= 9
+	11	= 10
+	12	= 11
+	... +3 unused capacity
+]}
+
+Insert 3 of 0 at 5: gp_vec { .unit = 4, .capacity = 32, .length = 16, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= -1
+	5	= 0
+	6	= 0
+	7	= 0
+	8	= 4
+	9	= 5
+	10	= 6
+	11	= 7
+	12	= 8
+	13	= 9
+	14	= 10
+	15	= 11
+	... +16 unused capacity
+]}
+
+Delete 3 of 0 at 5: gp_vec { .unit = 4, .capacity = 16, .length = 13, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= -1
+	5	= 4
+	6	= 5
+	7	= 6
+	8	= 7
+	9	= 8
+	10	= 9
+	11	= 10
+	12	= 11
+	... +3 unused capacity
+]}
+
+Delete -1 at 4: gp_vec { .unit = 4, .capacity = 16, .length = 12, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= 4
+	5	= 5
+	6	= 6
+	7	= 7
+	8	= 8
+	9	= 9
+	10	= 10
+	11	= 11
+	... +4 unused capacity
+]}
+
+Delete 11 at 11: gp_vec { .unit = 4, .capacity = 16, .length = 11, .payload = [
+ 	0	= 0
+	1	= 1
+	2	= 2
+	3	= 3
+	4	= 4
+	5	= 5
+	6	= 6
+	7	= 7
+	8	= 8
+	9	= 9
+	10	= 10
+	... +5 unused capacity
+]}
+
+Delete 0 at 0: gp_vec { .unit = 4, .capacity = 16, .length = 10, .payload = [
+ 	0	= 1
+	1	= 2
+	2	= 3
+	3	= 4
+	4	= 5
+	5	= 6
+	6	= 7
+	7	= 8
+	8	= 9
+	9	= 10
+	... +6 unused capacity
+]}
+
+Now print the int vector with FOREACH macro:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+After move & shrink:
+10
+2
+3
+4
+5
+6
+7
+8
+
+Vec of string vecs: 
+Line 0
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+/workspaces/gfxprim-gfxprim
+
+Running version ...
+GFXprim verson 1.0.0 (1.0.0-rc1)
+/workspaces/gfxprim-gfxprim
+
+Running virtual_backend_example ...
+1: gp_debug.c:gp_debug_print():58: GFXprim library version 1.0.0-rc1
+1: gp_backend_init.c:gp_backend_init():760: Have backend name 'x11' params ''
+1: gp_x11_conn.h:x11_open():142: Opening X11 display '(null)'
+1: gp_x11_conn.h:x11_open():151: Connection is local (:1)
+1: gp_x11_input.h:x11_input_init():105: Initializing X11 KeyCode table
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Up' KeySym 'Up' (65362) to KeyCode 111
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Down' KeySym 'Down' (65364) to KeyCode 116
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Left' KeySym 'Left' (65361) to KeyCode 113
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Right' KeySym 'Right' (65363) to KeyCode 114
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Home' KeySym 'Home' (65360) to KeyCode 110
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'PageUp' KeySym 'Prior' (65365) to KeyCode 112
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'PageDown' KeySym 'Next' (65366) to KeyCode 117
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'End' KeySym 'End' (65367) to KeyCode 115
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Backspace' KeySym 'BackSpace' (65288) to KeyCode 22
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Tab' KeySym 'Tab' (65289) to KeyCode 23
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Esc' KeySym 'Escape' (65307) to KeyCode 9
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Delete' KeySym 'Delete' (65535) to KeyCode 119
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Insert' KeySym 'Insert' (65379) to KeyCode 118
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Sysrq' KeySym 'Sys_Req' (65301) to KeyCode 107
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Pause' KeySym 'Pause' (65299) to KeyCode 127
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'ScrollLock' KeySym 'Scroll_Lock' (65300) to KeyCode 78
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'LeftShift' KeySym 'Shift_L' (65505) to KeyCode 50
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'RightShift' KeySym 'Shift_R' (65506) to KeyCode 62
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'LeftAlt' KeySym 'Alt_L' (65513) to KeyCode 64
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'RightAlt' KeySym 'Alt_R' (65514) to KeyCode 108
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'LeftCtrl' KeySym 'Control_L' (65507) to KeyCode 37
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'RightCtrl' KeySym 'Control_R' (65508) to KeyCode 105
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'CapsLock' KeySym 'Caps_Lock' (65509) to KeyCode 66
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'LeftMeta' KeySym 'Super_L' (65515) to KeyCode 133
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'RightMeta' KeySym 'Super_R' (65516) to KeyCode 134
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Compose' KeySym 'Menu' (65383) to KeyCode 135
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'KpEnter' KeySym 'KP_Enter' (65421) to KeyCode 104
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp0' KeySym 'KP_0' (65456) to KeyCode 90
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp1' KeySym 'KP_1' (65457) to KeyCode 87
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp2' KeySym 'KP_2' (65458) to KeyCode 88
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp3' KeySym 'KP_3' (65459) to KeyCode 89
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp4' KeySym 'KP_4' (65460) to KeyCode 83
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp5' KeySym 'KP_5' (65461) to KeyCode 84
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp6' KeySym 'KP_6' (65462) to KeyCode 85
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp7' KeySym 'KP_7' (65463) to KeyCode 79
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp8' KeySym 'KP_8' (65464) to KeyCode 80
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Kp9' KeySym 'KP_9' (65465) to KeyCode 81
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'KpPlus' KeySym 'KP_Add' (65451) to KeyCode 86
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'KpMinus' KeySym 'KP_Subtract' (65453) to KeyCode 82
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'KpDot' KeySym 'KP_Decimal' (65454) to KeyCode 129
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'KpSlash' KeySym 'KP_Divide' (65455) to KeyCode 106
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'KpAsterisk' KeySym 'KP_Multiply' (65450) to KeyCode 63
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'VolumeDown' KeySym 'XF86AudioLowerVolume' (269025041) to KeyCode 122
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'VolumeUp' KeySym 'XF86AudioRaiseVolume' (269025043) to KeyCode 123
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'Mute' KeySym 'XF86AudioMute' (269025042) to KeyCode 121
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'NextSong' KeySym 'XF86AudioNext' (269025047) to KeyCode 171
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'PreviousSong' KeySym 'XF86AudioPrev' (269025046) to KeyCode 173
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key 'PlayPause' KeySym 'XF86AudioPlay' (269025044) to KeyCode 172
+  3: gp_x11_input.h:x11_input_init():122: Mapping Key '102nd' KeySym 'less' (60) to KeyCode 94
+1: gp_x11_conn.h:x11_detect_wm_features():98: Window manager supports NetWM
+ 2: gp_x11_conn.h:x11_check_atoms():72: NetWM Atom '_NET_WM_STATE' is supported.
+ 2: gp_x11_conn.h:x11_check_atoms():73: NetWM Atom '_NET_WM_STATE_FULLSCREEN' is supported.
+ 2: gp_x11_win.h:x11_win_open():216: Have Visual id 33, depth 16
+ 2: gp_x11_win.h:x11_win_open():381: Opening window 'Virtual Backend Example' 0x0-350x350
+ 2: linux/gp_poll.c:gp_poll_add():25: Adding fd 3 event 0xffff8818d4a0 priv 0xaaaafc6e2360
+  3: linux/gp_poll.c:gp_poll_add():28: Opening epoll instance
+1: gp_x11.c:create_shm_ximage():326: Using MIT SHM Extension
+1: gp_x11.c:match_pixel_type():298: Matching image pixel type, visual=TrueColor depth=16
+1: gp_pixel.c:gp_pixel_rgb_match():77: Matching Pixel R 0000f800 G 000007e0 B 0000001f A 00000000 size 16
+ 2: gp_pixel.c:gp_pixel_rgb_match():95: Trying Pixel RGB555 16
+  3: gp_pixel.c:gp_pixel_rgb_match():99: Matching R 5 10
+  3: gp_pixel.c:gp_pixel_rgb_match():102: Matching G 5 5
+  3: gp_pixel.c:gp_pixel_rgb_match():105: Matching B 5 0
+  3: gp_pixel.c:match():45: R gen 00007c00 pass 0000f800
+ 2: gp_pixel.c:gp_pixel_rgb_match():95: Trying Pixel RGB565_BE 16
+  3: gp_pixel.c:gp_pixel_rgb_match():99: Matching R 5 11
+  3: gp_pixel.c:gp_pixel_rgb_match():102: Matching G 6 5
+  3: gp_pixel.c:gp_pixel_rgb_match():105: Matching B 5 0
+  3: gp_pixel.c:match():45: R gen 0000f800 pass 0000f800
+  3: gp_pixel.c:match():45: G gen 000007e0 pass 000007e0
+  3: gp_pixel.c:match():45: B gen 0000001f pass 0000001f
+  3: gp_pixel.c:match():39: NULL gen 00000000 pass 00000000
+1: gp_pixel.c:gp_pixel_rgb_match():114: Pixel found type id 7 name 'RGB565_BE'
+1: ../../include/backends/gp_dpi.h:gp_dpi_from_size():30: Resolution 2056x1114 - 0mmx0mm - dpi 4294967295
+   4: gp_x11.c:x11_update():84: Flipping pixmap
+1: gp_x11_input.h:x11_input_event_put():296: ReparentNotify event received
+1: gp_x11_input.h:x11_input_event_put():292: MapNotify event received
+1: gp_x11_input.h:x11_input_event_put():325: VisibilityUnobscured received
+   4: gp_x11.c:x11_ev():124: Expose 0x0-350x350 0
+   4: gp_x11.c:x11_update_rect():60: Updating rect 0x0-349x349
+/workspaces/gfxprim-gfxprim
+
+Running weighted_median ...
+Loading 'ball.ppm' 0.0%Loading 'ball.ppm' 100.0%
+Weighted Median 'ball.ppm' 0.0%Weighted Median 'ball.ppm' 100.0%
+Saving 'out.png' 0.0%Saving 'out.png' 100.0%
+/workspaces/gfxprim-gfxprim
+
+Running x11_windows ...
+/workspaces/gfxprim-gfxprim
+
+Running zip_container ...
+/workspaces/gfxprim-gfxprim
+
+Running grinder ...
+Processing '/workspaces/gfxprim-gfxprim/dev/resources/images/ball.ppm' -> 'out_001.ppm'
+/workspaces/gfxprim-gfxprim
+
+Running particle_demo ...
+/workspaces/gfxprim-gfxprim
+
+Running backends.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./backends.py", line 56, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./backends.py", line 35, in main
+    bk = backends.backend_init(backend_string, "Backend Example")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: gp_backend_init() missing 2 required positional arguments: 'pref_h' and 'caption'
+/workspaces/gfxprim-gfxprim
+
+Running blit.py ...
+/workspaces/gfxprim-gfxprim
+
+Running blur.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./blur.py", line 23, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./blur.py", line 18, in main
+    filters.gaussian_blur(img, img, radii, radii)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gfxprim.filters' has no attribute 'gaussian_blur'
+/workspaces/gfxprim-gfxprim
+
+Running cam_view.py ...
+
+C stack trace (most recent call first):
+../../build/libgfxprim.so.1(gp_debug_print_cstack+0x3c)[0xffffa48c911c]
+../../build/libgfxprim.so.1(gp_debug_print+0x290)[0xffffa48ca93c]
+../../build/libgfxprim-grabbers.so.1(gp_grabber_v4l2_init+0x318)[0xffffa2fb13c4]
+/workspaces/gfxprim-gfxprim/pylib/gfxprim/grabbers/_c_grabbers.so(+0x42d4)[0xffffa2fe42d4]
+python3[0x50425c]
+python3(_PyObject_MakeTpCall+0x78)[0x4c3e58]
+python3(_PyEval_EvalFrameDefault+0x8a0)[0x564494]
+python3(PyEval_EvalCode+0x130)[0x5627e4]
+python3[0x59b994]
+python3[0x680404]
+python3(_PyRun_SimpleFileObject+0x194)[0x67ffd8]
+python3(_PyRun_AnyFileObject+0x54)[0x67fda4]
+python3(Py_RunMain+0x2dc)[0x68adac]
+python3(Py_BytesMain+0x28)[0x68a968]
+/lib/aarch64-linux-gnu/libc.so.6(+0x284c4)[0xffffa4ff84c4]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98)[0xffffa4ff8598]
+python3(_start+0x30)[0x5f5fb0]
+*** WARNING: gp_v4l2.c:gp_grabber_v4l2_init():242: Failed to open V4L2 grabber '/dev/video0'
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./cam_view.py", line 47, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./cam_view.py", line 13, in main
+    grabber = grabbers.grabber_v4l2_init("/dev/video0", 320, 240);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/grabbers/c_grabbers.py", line 93, in gp_grabber_v4l2_init
+    return _c_grabbers.gp_grabber_v4l2_init(device, preferred_width, preferred_height)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory
+/workspaces/gfxprim-gfxprim
+
+Running convolution.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./convolution.py", line 26, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./convolution.py", line 21, in main
+    res = img.filters.convolution_alloc(kern, 25);
+          ^^^^^^^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'filters'
+/workspaces/gfxprim-gfxprim
+
+Running dither.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./dither.py", line 21, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./dither.py", line 16, in main
+    res = img.filters.floyd_steinberg_alloc(core.C.PIXEL_G1)
+          ^^^^^^^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'filters'
+/workspaces/gfxprim-gfxprim
+
+Running font_style.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./font_style.py", line 58, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./font_style.py", line 42, in main
+    redraw(win)
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./font_style.py", line 17, in redraw
+    c.gfx.fill(black)
+    ^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'gfx'
+/workspaces/gfxprim-gfxprim
+
+Running gfx.py ...
+Press SPACE to draw different shape, ESC to exit
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./gfx.py", line 171, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./gfx.py", line 151, in main
+    ev = bk.wait_event()
+         ^^^^^^^^^^^^^^^
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/backends/_extend_backend.py", line 53, in wait_event
+    c_backends.gp_backend_wait_event(self, ev)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gfxprim.backends.c_backends' has no attribute 'gp_backend_wait_event'. Did you mean: 'gp_backend_wait_timeout'?
+/workspaces/gfxprim-gfxprim
+
+Running gfxprim_qt.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./gfxprim_qt.py", line 4, in <module>
+    from PySide import QtGui
+ModuleNotFoundError: No module named 'PySide'
+/workspaces/gfxprim-gfxprim
+
+Running invert.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./invert.py", line 21, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./invert.py", line 16, in main
+    img.filters.invert(img);
+    ^^^^^^^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'filters'
+/workspaces/gfxprim-gfxprim
+
+Running loaders_example.py ...
+Takes an image as an argument
+/workspaces/gfxprim-gfxprim
+
+Running progress_callback.py ...
+Takes an image as an argument
+/workspaces/gfxprim-gfxprim
+
+Running resize.py ...
+USAGE: ./resize.py imput_image output_image
+/workspaces/gfxprim-gfxprim
+
+Running rotate90.py ...
+USAGE: ./rotate90.py imput_image output_image
+/workspaces/gfxprim-gfxprim
+
+Running showimage.py ...
+Takes an image as an argument
+/workspaces/gfxprim-gfxprim
+
+Running x11_windows.py ...
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./x11_windows.py", line 67, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./x11_windows.py", line 53, in main
+    redraw(win1, "win1")
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./x11_windows.py", line 17, in redraw
+    c.gfx.fill(black)
+    ^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'gfx'
+/workspaces/gfxprim-gfxprim
+
+Running spiv ...
+/workspaces/gfxprim-gfxprim
+
+Running ttf2img ...
+/workspaces/gfxprim-gfxprim
+
+Running choice ...
+/workspaces/gfxprim-gfxprim
+
+Running choice_arr ...
+/workspaces/gfxprim-gfxprim
+
+Running choice_json_arr ...
+/workspaces/gfxprim-gfxprim
+
+Running clock ...
+/workspaces/gfxprim-gfxprim
+
+Running datetime ...
+/workspaces/gfxprim-gfxprim
+
+Running disable ...
+/workspaces/gfxprim-gfxprim
+
+Running disk_free ...
+0: disk_free.c:load_fsinfo():72: overlay: bsize 4096 blocks 528161516 free 525550605 avail 498702977
+0: disk_free.c:load_fsinfo():72: overlay: bsize 4096 blocks 200600 free 200464 avail 200464
+0: disk_free.c:load_fsinfo():72: /dev/vda1: bsize 4096 blocks 528161516 free 525550605 avail 498702977
+0: disk_free.c:load_fsinfo():72: /run/host_mark/Users: bsize 1048576 blocks 975666340 free 685019668 avail 685019668
+0: disk_free.c:load_fsinfo():72: /dev/vda1: bsize 4096 blocks 528161516 free 525550605 avail 498702977
+0: disk_free.c:load_fsinfo():72: /dev/vda1: bsize 4096 blocks 528161516 free 525550605 avail 498702977
+0: disk_free.c:load_fsinfo():72: /dev/vda1: bsize 4096 blocks 528161516 free 525550605 avail 498702977
+0: disk_free.c:load_fsinfo():72: /run/host_mark/Users: bsize 1048576 blocks 975666340 free 685019668 avail 685019668
+/workspaces/gfxprim-gfxprim
+
+Running example ...
+/workspaces/gfxprim-gfxprim
+
+Running file_dialogs ...
+/workspaces/gfxprim-gfxprim
+
+Running focus ...
+/workspaces/gfxprim-gfxprim
+
+Running graph ...
+/workspaces/gfxprim-gfxprim
+
+Running grid_move_widget ...
+/workspaces/gfxprim-gfxprim
+
+Running layout_switch_example ...
+/workspaces/gfxprim-gfxprim
+
+Running log ...
+/workspaces/gfxprim-gfxprim
+
+Running login_example ...
+/workspaces/gfxprim-gfxprim
+
+Running markup_example ...
+/workspaces/gfxprim-gfxprim
+
+Running message_dialog ...
+/workspaces/gfxprim-gfxprim
+
+Running nested_dialogs ...
+/workspaces/gfxprim-gfxprim
+
+Running overlay_example ...
+/workspaces/gfxprim-gfxprim
+
+Running pixmap_example ...
+/workspaces/gfxprim-gfxprim
+
+Running scroll_area_example ...
+/workspaces/gfxprim-gfxprim
+
+Running show_layout ...
+/workspaces/gfxprim-gfxprim
+
+Running showimage ...
+/workspaces/gfxprim-gfxprim
+
+Running table_example ...
+/workspaces/gfxprim-gfxprim
+
+Running tabs ...
+/workspaces/gfxprim-gfxprim
+
+Running tabs_example ...
+/workspaces/gfxprim-gfxprim
+
+Running todo ...
+/workspaces/gfxprim-gfxprim

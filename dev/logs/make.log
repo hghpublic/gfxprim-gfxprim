@@ -1,0 +1,1365 @@
+DIR  /include
+DIR  /include/core
+CCT  gp_convert_scale.gen.h
+/workspaces/gfxprim-gfxprim/gen/include/pixeltype.py:55: SyntaxWarning: invalid escape sequence '\A'
+  assert re.match('\A[A-Za-z][A-Za-z0-9_]*\Z', name)
+CCT  gp_pixel.gen.h
+CCT  gp_get_put_pixel.gen.h
+CCT  gp_convert.gen.h
+CCT  gp_mix_pixels.gen.h
+CCT  gp_gamma_correction.gen.h
+CCT  gp_write_pixels.gen.h
+CCT  gp_mix_pixels2.gen.h
+CCT  gp_pixel_pack.gen.h
+CCT  gp_pixel_channel.gen.h
+DIR  /include/gfx
+CCT  gp_vline.gen.h
+CCT  gp_hline.gen.h
+DIR  /include/loaders
+CCT  gp_loaders.gen.h
+DIR  /include/filters
+CCT  gp_point.gen.h
+CCT  gp_dither.gen.h
+DIR  /libs
+DIR  /libs/core
+CCT  gp_fill.gen.c
+DEP  -I(include core) gp_fill.gen.dep
+CCT  gp_srgb_correction.gen.c
+DEP  -I(include core) gp_srgb_correction.gen.dep
+CCT  gp_convert.gen.c
+DEP  -I(include core) gp_convert.gen.dep
+CCT  gp_blit.gen.c
+DEP  -I(include core) gp_blit.gen.dep
+CCT  gp_pixel.gen.c
+DEP  -I(include core) gp_pixel.gen.dep
+DEP  -I(include core) gp_write_pixels.dep
+DEP  -I(include core) gp_types.dep
+DEP  -I(include core) gp_threads.dep
+DEP  -I(include core) gp_pixmap.dep
+DEP  -I(include core) gp_pixel.dep
+DEP  -I(include core) gp_pattern_fill.dep
+DEP  -I(include core) gp_get_put_pixel.dep
+DEP  -I(include core) gp_gamma_correction.dep
+DEP  -I(include core) gp_debug.dep
+DEP  -I(include core) gp_common.dep
+DEP  -I(include core) gp_blit.dep
+CC   -I(include core) gp_blit.o
+CC   -I(include core) gp_common.o
+CC   -I(include core) gp_debug.o
+CC   -I(include core) gp_gamma_correction.o
+CC   -I(include core) gp_get_put_pixel.o
+CC   -I(include core) gp_pattern_fill.o
+CC   -I(include core) gp_pixel.o
+CC   -I(include core) gp_pixmap.o
+CC   -I(include core) gp_threads.o
+CC   -I(include core) gp_types.o
+CC   -I(include core) gp_write_pixels.o
+CC   -I(include core) gp_pixel.gen.o
+CC   -I(include core) gp_blit.gen.o
+CC   -I(include core) gp_convert.gen.o
+CC   -I(include core) gp_srgb_correction.gen.o
+CC   -I(include core) gp_fill.gen.o
+DIR  /libs/utils
+DEP  -I(include core) linux/gp_user_path.dep
+DEP  -I(include core) linux/gp_poll.dep
+DEP  -I(include core) linux/gp_path.dep
+DEP  -I(include core) linux/gp_app_cfg.dep
+DEP  -I(include core) gp_vec_str.dep
+DEP  -I(include core) gp_vec.dep
+DEP  -I(include core) gp_utf.dep
+DEP  -I(include core) gp_user_path.dep
+DEP  -I(include core) gp_timer.dep
+DEP  -I(include core) gp_path.dep
+DEP  -I(include core) gp_matrix.dep
+DEP  -I(include core) gp_markup_plaintext.dep
+DEP  -I(include core) gp_markup_parser.dep
+DEP  -I(include core) gp_markup_justify.dep
+DEP  -I(include core) gp_markup_html.dep
+DEP  -I(include core) gp_markup_gfxprim.dep
+DEP  -I(include core) gp_markup.dep
+DEP  -I(include core) gp_json_writer.dep
+DEP  -I(include core) gp_json_serdes.dep
+DEP  -I(include core) gp_json_reader.dep
+DEP  -I(include core) gp_json_common.dep
+DEP  -I(include core) gp_htable.dep
+DEP  -I(include core) gp_elf_note.dep
+DEP  -I(include core) gp_block_alloc.dep
+DEP  -I(include core) gp_app_cfg.dep
+CC   -I(include core) gp_app_cfg.o
+CC   -I(include core) gp_block_alloc.o
+CC   -I(include core) gp_elf_note.o
+CC   -I(include core) gp_htable.o
+CC   -I(include core) gp_json_common.o
+CC   -I(include core) gp_json_reader.o
+CC   -I(include core) gp_json_serdes.o
+CC   -I(include core) gp_json_writer.o
+CC   -I(include core) gp_markup.o
+CC   -I(include core) gp_markup_gfxprim.o
+CC   -I(include core) gp_markup_html.o
+CC   -I(include core) gp_markup_justify.o
+CC   -I(include core) gp_markup_parser.o
+CC   -I(include core) gp_markup_plaintext.o
+CC   -I(include core) gp_matrix.o
+CC   -I(include core) gp_path.o
+CC   -I(include core) gp_timer.o
+CC   -I(include core) gp_user_path.o
+CC   -I(include core) gp_utf.o
+CC   -I(include core) gp_vec.o
+CC   -I(include core) gp_vec_str.o
+CC   -I(include core) linux/gp_app_cfg.o
+CC   -I(include core) linux/gp_path.o
+CC   -I(include core) linux/gp_poll.o
+CC   -I(include core) linux/gp_user_path.o
+DIR  /libs/gfx
+CCT  gp_arc.gen.c
+DEP  -I(include gfx) gp_arc.gen.dep
+CCT  gp_line_th.gen.c
+DEP  -I(include gfx) gp_line_th.gen.dep
+CCT  gp_polygon.gen.c
+DEP  -I(include gfx) gp_polygon.gen.dep
+CCT  gp_fill_ring.gen.c
+DEP  -I(include gfx) gp_fill_ring.gen.dep
+CCT  gp_symbol.gen.c
+DEP  -I(include gfx) gp_symbol.gen.dep
+CCT  gp_circle_seg.gen.c
+DEP  -I(include gfx) gp_circle_seg.gen.dep
+CCT  gp_circle.gen.c
+DEP  -I(include gfx) gp_circle.gen.dep
+CCT  gp_fill_ellipse.gen.c
+DEP  -I(include gfx) gp_fill_ellipse.gen.dep
+CCT  gp_vline.gen.c
+DEP  -I(include gfx) gp_vline.gen.dep
+CCT  gp_fill_circle.gen.c
+DEP  -I(include gfx) gp_fill_circle.gen.dep
+CCT  gp_line.gen.c
+DEP  -I(include gfx) gp_line.gen.dep
+DEP  -I(include gfx) gp_vline.dep
+DEP  -I(include gfx) gp_triangle.dep
+DEP  -I(include gfx) gp_tetragon.dep
+DEP  -I(include gfx) gp_symbol.dep
+DEP  -I(include gfx) gp_rect.dep
+DEP  -I(include gfx) gp_line_clip.dep
+DEP  -I(include gfx) gp_hline.dep
+DEP  -I(include gfx) gp_ellipse.dep
+DEP  -I(include gfx) gp_circle_seg.dep
+DEP  -I(include gfx) gp_circle.dep
+CC   -I(include gfx) gp_circle.o
+CC   -I(include gfx) gp_circle_seg.o
+CC   -I(include gfx) gp_ellipse.o
+CC   -I(include gfx) gp_hline.o
+CC   -I(include gfx) gp_line_clip.o
+CC   -I(include gfx) gp_rect.o
+CC   -I(include gfx) gp_symbol.o
+CC   -I(include gfx) gp_tetragon.o
+CC   -I(include gfx) gp_triangle.o
+CC   -I(include gfx) gp_vline.o
+CC   -I(include gfx) gp_line.gen.o
+CC   -I(include gfx) gp_fill_circle.gen.o
+CC   -I(include gfx) gp_vline.gen.o
+gp_vline.gen.c: In function ‘gp_vline_raw_1BPP_DB’:
+gp_vline.gen.c:22:26: warning: unused variable ‘p’ [-Wunused-variable]
+   22 |         gp_pixel fg, bg, p;
+      |                          ^
+gp_vline.gen.c: In function ‘gp_vline_raw_1BPP_UB’:
+gp_vline.gen.c:61:26: warning: unused variable ‘p’ [-Wunused-variable]
+   61 |         gp_pixel fg, bg, p;
+      |                          ^
+CC   -I(include gfx) gp_fill_ellipse.gen.o
+CC   -I(include gfx) gp_circle.gen.o
+CC   -I(include gfx) gp_circle_seg.gen.o
+CC   -I(include gfx) gp_symbol.gen.o
+CC   -I(include gfx) gp_fill_ring.gen.o
+CC   -I(include gfx) gp_polygon.gen.o
+CC   -I(include gfx) gp_line_th.gen.o
+CC   -I(include gfx) gp_arc.gen.o
+DIR  /libs/text
+CCT  gp_text.gen.c
+DEP  -I(include text) gp_text.gen.dep
+DEP  -I(include text) gp_text_metric.dep
+DEP  -I(include text) gp_text.dep
+DEP  -I(include text) gp_haxor_square_8x8.dep
+DEP  -I(include text) gp_haxor_narrow_17.dep
+DEP  -I(include text) gp_haxor_narrow_16.dep
+DEP  -I(include text) gp_haxor_narrow_15.dep
+DEP  -I(include text) gp_haxor_medium_12.dep
+DEP  -I(include text) gp_haxor_medium_11.dep
+DEP  -I(include text) gp_haxor_medium_10.dep
+DEP  -I(include text) gp_free_type.dep
+DEP  -I(include text) gp_fonts.dep
+DEP  -I(include text) gp_font_haxor_tiny.dep
+DEP  -I(include text) gp_font_haxor_narrow_18.dep
+DEP  -I(include text) gp_font_c64.dep
+DEP  -I(include text) gp_font.dep
+DEP  -I(include text) gp_default_font.dep
+CC   -I(include text) gp_default_font.o
+CC   -I(include text) gp_font.o
+CC   -I(include text) gp_font_c64.o
+CC   -I(include text) gp_font_haxor_narrow_18.o
+CC   -I(include text) gp_font_haxor_tiny.o
+CC   -I(include text) gp_fonts.o
+CC   -I(include text) gp_free_type.o
+CC   -I(include text) gp_haxor_medium_10.o
+CC   -I(include text) gp_haxor_medium_11.o
+CC   -I(include text) gp_haxor_medium_12.o
+CC   -I(include text) gp_haxor_narrow_15.o
+CC   -I(include text) gp_haxor_narrow_16.o
+CC   -I(include text) gp_haxor_narrow_17.o
+CC   -I(include text) gp_haxor_square_8x8.o
+CC   -I(include text) gp_text.o
+CC   -I(include text) gp_text_metric.o
+CC   -I(include text) gp_text.gen.o
+DIR  /libs/loaders
+DEP  -I(include core loaders) gp_zip.dep
+DEP  -I(include core loaders) gp_webp.dep
+DEP  -I(include core loaders) gp_tiff.dep
+DEP  -I(include core loaders) gp_rar.dep
+DEP  -I(include core loaders) gp_psp.dep
+DEP  -I(include core loaders) gp_psd.dep
+DEP  -I(include core loaders) gp_pnm.dep
+DEP  -I(include core loaders) gp_png.dep
+DEP  -I(include core loaders) gp_pcx.dep
+DEP  -I(include core loaders) gp_loader.dep
+DEP  -I(include core loaders) gp_line_convert.dep
+DEP  -I(include core loaders) gp_jpg.dep
+DEP  -I(include core loaders) gp_jp2.dep
+DEP  -I(include core loaders) gp_io_zlib.dep
+DEP  -I(include core loaders) gp_io_parser.dep
+DEP  -I(include core loaders) gp_io.dep
+DEP  -I(include core loaders) gp_ico.dep
+DEP  -I(include core loaders) gp_icc.dep
+DEP  -I(include core loaders) gp_heif.dep
+DEP  -I(include core loaders) gp_gif.dep
+DEP  -I(include core loaders) gp_exif.dep
+DEP  -I(include core loaders) gp_data_storage.dep
+DEP  -I(include core loaders) gp_container.dep
+DEP  -I(include core loaders) gp_bmp.dep
+CC   -I(include core loaders) gp_bmp.o
+CC   -I(include core loaders) gp_container.o
+CC   -I(include core loaders) gp_data_storage.o
+CC   -I(include core loaders) gp_exif.o
+CC   -I(include core loaders) gp_gif.o
+CC   -I(include core loaders) gp_heif.o
+CC   -I(include core loaders) gp_icc.o
+CC   -I(include core loaders) gp_ico.o
+CC   -I(include core loaders) gp_io.o
+CC   -I(include core loaders) gp_io_parser.o
+CC   -I(include core loaders) gp_io_zlib.o
+CC   -I(include core loaders) gp_jp2.o
+CC   -I(include core loaders) gp_jpg.o
+gp_jpg.c: In function ‘gp_read_jpg_ex’:
+gp_jpg.c:364:41: warning: comparison of integer expressions of different signedness: ‘gp_correction_type’ and ‘int’ [-Wsign-compare]
+  364 |                 if (corr_desc.corr_type == -1)
+      |                                         ^~
+gp_jpg.c:298:20: warning: variable ‘ret’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+  298 |         gp_pixmap *ret = NULL;
+      |                    ^~~
+CC   -I(include core loaders) gp_line_convert.o
+CC   -I(include core loaders) gp_loader.o
+CC   -I(include core loaders) gp_pcx.o
+CC   -I(include core loaders) gp_png.o
+gp_png.c: In function ‘read_convert_bitmap’:
+gp_png.c:203:54: warning: unused parameter ‘gamma’ [-Wunused-parameter]
+  203 |                                int has_gamma, double gamma)
+      |                                               ~~~~~~~^~~~~
+gp_png.c: In function ‘gp_write_png’:
+gp_png.c:614:23: warning: variable ‘out_pix’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+  614 |         gp_pixel_type out_pix = src->pixel_type;
+      |                       ^~~~~~~
+gp_png.c: In function ‘gp_read_png_ex’:
+gp_png.c:263:23: warning: variable ‘pixel_type’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+  263 |         gp_pixel_type pixel_type = GP_PIXEL_UNKNOWN;
+      |                       ^~~~~~~~~~
+gp_png.c:265:18: warning: variable ‘passes’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+  265 |         int err, passes = 1;
+      |                  ^~~~~~
+gp_png.c:269:13: warning: variable ‘convert_16_to_8’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+  269 |         int convert_16_to_8 = 0;
+      |             ^~~~~~~~~~~~~~~
+CC   -I(include core loaders) gp_pnm.o
+gp_pnm.c:1009:12: warning: ‘write_binary_ppm’ defined but not used [-Wunused-function]
+ 1009 | static int write_binary_ppm(FILE *f, gp_pixmap *src)
+      |            ^~~~~~~~~~~~~~~~
+CC   -I(include core loaders) gp_psd.o
+CC   -I(include core loaders) gp_psp.o
+CC   -I(include core loaders) gp_rar.o
+CC   -I(include core loaders) gp_tiff.o
+CC   -I(include core loaders) gp_webp.o
+CC   -I(include core loaders) gp_zip.o
+AR   ../../build/libgfxprim-loaders.a
+LD   ../../build/libgfxprim-loaders.so.1.0.0
+LN   libgfxprim-loaders.so.1
+LN   libgfxprim-loaders.so
+DIR  /libs/filters
+CCT  gp_linear_convolution.gen.c
+DEP  -I(include core filters) gp_linear_convolution.gen.dep
+CCT  gp_resize_linear.gen.c
+DEP  -I(include core filters) gp_resize_linear.gen.dep
+CCT  gp_resize_cubic.gen.c
+DEP  -I(include core filters) gp_resize_cubic.gen.dep
+CCT  gp_cubic.gen.c
+DEP  -I(include core filters) gp_cubic.gen.dep
+CCT  gp_resize_nn.gen.c
+DEP  -I(include core filters) gp_resize_nn.gen.dep
+CCT  gp_histogram.gen.c
+DEP  -I(include core filters) gp_histogram.gen.dep
+CCT  gp_mul.gen.c
+DEP  -I(include core filters) gp_mul.gen.dep
+CCT  gp_max.gen.c
+DEP  -I(include core filters) gp_max.gen.dep
+CCT  gp_min.gen.c
+DEP  -I(include core filters) gp_min.gen.dep
+CCT  gp_add.gen.c
+DEP  -I(include core filters) gp_add.gen.dep
+CCT  gp_diff.gen.c
+DEP  -I(include core filters) gp_diff.gen.dep
+CCT  gp_multi_tone.gen.c
+DEP  -I(include core filters) gp_multi_tone.gen.dep
+CCT  gp_apply_tables.gen.c
+DEP  -I(include core filters) gp_apply_tables.gen.dep
+CCT  gp_gaussian_noise.gen.c
+DEP  -I(include core filters) gp_gaussian_noise.gen.dep
+CCT  gp_posterize.gen.c
+DEP  -I(include core filters) gp_posterize.gen.dep
+CCT  gp_brightness_contrast.gen.c
+DEP  -I(include core filters) gp_brightness_contrast.gen.dep
+CCT  gp_contrast.gen.c
+DEP  -I(include core filters) gp_contrast.gen.dep
+CCT  gp_brightness.gen.c
+DEP  -I(include core filters) gp_brightness.gen.dep
+CCT  gp_invert.gen.c
+DEP  -I(include core filters) gp_invert.gen.dep
+CCT  gp_hilbert_peano.gen.c
+DEP  -I(include core filters) gp_hilbert_peano.gen.dep
+CCT  gp_dither.gen.c
+DEP  -I(include core filters) gp_dither.gen.dep
+CCT  gp_rotate.gen.c
+DEP  -I(include core filters) gp_rotate.gen.dep
+CCT  gp_mirror_h.gen.c
+DEP  -I(include core filters) gp_mirror_h.gen.dep
+DEP  -I(include core filters) gp_weighted_median.dep
+DEP  -I(include core filters) gp_sigma.dep
+DEP  -I(include core filters) gp_sepia.dep
+DEP  -I(include core filters) gp_rotate.dep
+DEP  -I(include core filters) gp_resize_cubic_float.dep
+DEP  -I(include core filters) gp_resize.dep
+DEP  -I(include core filters) gp_rand.dep
+DEP  -I(include core filters) gp_median.dep
+DEP  -I(include core filters) gp_linear_threads.dep
+DEP  -I(include core filters) gp_linear_convolution.dep
+DEP  -I(include core filters) gp_laplace.dep
+DEP  -I(include core filters) gp_histogram.dep
+DEP  -I(include core filters) gp_edge.dep
+DEP  -I(include core filters) gp_dither.dep
+DEP  -I(include core filters) gp_convolution.dep
+DEP  -I(include core filters) gp_blur.dep
+DEP  -I(include core filters) gp_apply_tables.dep
+CC   -I(include core filters) gp_apply_tables.o
+CC   -I(include core filters) gp_blur.o
+CC   -I(include core filters) gp_convolution.o
+CC   -I(include core filters) gp_dither.o
+CC   -I(include core filters) gp_edge.o
+CC   -I(include core filters) gp_histogram.o
+CC   -I(include core filters) gp_laplace.o
+CC   -I(include core filters) gp_linear_convolution.o
+CC   -I(include core filters) gp_linear_threads.o
+CC   -I(include core filters) gp_median.o
+CC   -I(include core filters) gp_rand.o
+CC   -I(include core filters) gp_resize.o
+CC   -I(include core filters) gp_resize_cubic_float.o
+CC   -I(include core filters) gp_rotate.o
+gp_rotate.c: In function ‘gp_filter_mirror_v_raw’:
+gp_rotate.c:23:10: warning: #warning FIXME: non byte aligned pixels [-Wcpp]
+   23 |         #warning FIXME: non byte aligned pixels
+      |          ^~~~~~~
+CC   -I(include core filters) gp_sepia.o
+CC   -I(include core filters) gp_sigma.o
+CC   -I(include core filters) gp_weighted_median.o
+CC   -I(include core filters) gp_mirror_h.gen.o
+CC   -I(include core filters) gp_rotate.gen.o
+CC   -I(include core filters) gp_dither.gen.o
+CC   -I(include core filters) gp_hilbert_peano.gen.o
+CC   -I(include core filters) gp_invert.gen.o
+CC   -I(include core filters) gp_brightness.gen.o
+CC   -I(include core filters) gp_contrast.gen.o
+CC   -I(include core filters) gp_brightness_contrast.gen.o
+CC   -I(include core filters) gp_posterize.gen.o
+CC   -I(include core filters) gp_gaussian_noise.gen.o
+CC   -I(include core filters) gp_apply_tables.gen.o
+CC   -I(include core filters) gp_multi_tone.gen.o
+CC   -I(include core filters) gp_diff.gen.o
+CC   -I(include core filters) gp_add.gen.o
+CC   -I(include core filters) gp_min.gen.o
+CC   -I(include core filters) gp_max.gen.o
+CC   -I(include core filters) gp_mul.gen.o
+CC   -I(include core filters) gp_histogram.gen.o
+CC   -I(include core filters) gp_resize_nn.gen.o
+CC   -I(include core filters) gp_cubic.gen.o
+CC   -I(include core filters) gp_resize_cubic.gen.o
+CC   -I(include core filters) gp_resize_linear.gen.o
+CC   -I(include core filters) gp_linear_convolution.gen.o
+DIR  /libs/input
+DEP  -I(include core input) linux/gp_time_stamp.dep
+DEP  -I(include core input) gp_task.dep
+DEP  -I(include core input) gp_keys.dep
+DEP  -I(include core input) gp_keymap.dep
+DEP  -I(include core input) gp_ev_feedback.dep
+DEP  -I(include core input) gp_event_queue.dep
+DEP  -I(include core input) gp_event.dep
+CC   -I(include core input) gp_event.o
+CC   -I(include core input) gp_event_queue.o
+CC   -I(include core input) gp_ev_feedback.o
+CC   -I(include core input) gp_keymap.o
+gp_keymap.c: In function ‘map_key’:
+gp_keymap.c:519:69: warning: unused parameter ‘queue’ [-Wunused-parameter]
+  519 | static int map_key(struct map *map, struct mods *mods, gp_ev_queue *queue, gp_event *ev)
+      |                                                        ~~~~~~~~~~~~~^~~~~
+CC   -I(include core input) gp_keys.o
+CC   -I(include core input) gp_task.o
+CC   -I(include core input) linux/gp_time_stamp.o
+DIR  /libs/backends
+DEP  -I(include backends) linux/gp_linux_spi.dep
+DEP  -I(include backends) linux/gp_linux_input_touchpad.dep
+DEP  -I(include backends) linux/gp_linux_input_hotplug.dep
+DEP  -I(include backends) linux/gp_linux_input.dep
+DEP  -I(include backends) linux/gp_linux_gpio.dep
+DEP  -I(include backends) linux/gp_linux_backlight.dep
+DEP  -I(include backends) linux/gp_input_driver_kbd.dep
+DEP  -I(include backends) linux/gp_display_uc8179.dep
+DEP  -I(include backends) linux/gp_display_st77xx.dep
+DEP  -I(include backends) linux/gp_display_st7565.dep
+DEP  -I(include backends) linux/gp_display_st75256.dep
+DEP  -I(include backends) linux/gp_display_ssd16xx.dep
+DEP  -I(include backends) linux/gp_display_spi.dep
+DEP  -I(include backends) linux/gp_display_eink.dep
+DEP  -I(include backends) linux/gp_display_conn.dep
+DEP  -I(include backends) linux/gp_backend_proxy_shm.dep
+DEP  -I(include backends) linux/gp_backend_proxy_proto.dep
+DEP  -I(include backends) linux/gp_backend_proxy_conn.dep
+DEP  -I(include backends) linux/gp_backend_proxy_cli.dep
+DEP  -I(include backends) linux/gp_backend_proxy.dep
+DEP  -I(include backends) linux/gp_backend_fb.dep
+DEP  -I(include backends) linux/gp_backend_drm.dep
+DEP  -I(include backends) linux/gp_backend_display.dep
+DEP  -I(include backends) gp_xcb.dep
+DEP  -I(include backends) gp_x11.dep
+DEP  -I(include backends) gp_sdl.dep
+DEP  -I(include backends) gp_input_driver_sdl.dep
+DEP  -I(include backends) gp_cursor.dep
+DEP  -I(include backends) gp_clipboard.dep
+DEP  -I(include backends) gp_backend_wayland.dep
+DEP  -I(include backends) gp_backend_virtual.dep
+DEP  -I(include backends) gp_backend_input.dep
+DEP  -I(include backends) gp_backend_init.dep
+DEP  -I(include backends) gp_backend.dep
+DEP  -I(include backends) gp_aalib.dep
+CC   -I(include backends) gp_aalib.o
+CC   -I(include backends) gp_backend.o
+CC   -I(include backends) gp_backend_init.o
+CC   -I(include backends) gp_backend_input.o
+CC   -I(include backends) gp_backend_virtual.o
+CC   -I(include backends) gp_backend_wayland.o
+CC   -I(include backends) gp_clipboard.o
+CC   -I(include backends) gp_cursor.o
+CC   -I(include backends) gp_input_driver_sdl.o
+CC   -I(include backends) gp_sdl.o
+CC   -I(include backends) gp_x11.o
+CC   -I(include backends) gp_xcb.o
+CC   -I(include backends) linux/gp_backend_display.o
+CC   -I(include backends) linux/gp_backend_drm.o
+CC   -I(include backends) linux/gp_backend_fb.o
+CC   -I(include backends) linux/gp_backend_proxy.o
+linux/gp_backend_proxy.c: In function ‘gp_proxy_init’:
+linux/gp_backend_proxy.c:446:42: warning: passing argument 3 of ‘gp_proxy_send’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  446 |         gp_proxy_send(fd, GP_PROXY_NAME, title);
+      |                                          ^~~~~
+In file included from linux/gp_backend_proxy.c:20:
+../../include/backends/gp_proxy_proto.h:376:63: note: expected ‘void *’ but argument is of type ‘const char *’
+  376 | int gp_proxy_send(int fd, enum gp_proxy_msg_types type, void *payload);
+      |                                                         ~~~~~~^~~~~~~
+CC   -I(include backends) linux/gp_backend_proxy_cli.o
+CC   -I(include backends) linux/gp_backend_proxy_conn.o
+CC   -I(include backends) linux/gp_backend_proxy_proto.o
+CC   -I(include backends) linux/gp_backend_proxy_shm.o
+CC   -I(include backends) linux/gp_display_conn.o
+CC   -I(include backends) linux/gp_display_eink.o
+CC   -I(include backends) linux/gp_display_spi.o
+CC   -I(include backends) linux/gp_display_ssd16xx.o
+CC   -I(include backends) linux/gp_display_st75256.o
+CC   -I(include backends) linux/gp_display_st7565.o
+linux/gp_display_st7565.c: In function ‘st7565_repaint_part’:
+linux/gp_display_st7565.c:89:60: warning: unused parameter ‘x0’ [-Wunused-parameter]
+   89 | static void st7565_repaint_part(gp_backend *self, gp_coord x0, gp_coord y0, gp_coord x1, gp_coord y1)
+      |                                                   ~~~~~~~~~^~
+linux/gp_display_st7565.c:89:73: warning: unused parameter ‘y0’ [-Wunused-parameter]
+   89 | static void st7565_repaint_part(gp_backend *self, gp_coord x0, gp_coord y0, gp_coord x1, gp_coord y1)
+      |                                                                ~~~~~~~~~^~
+linux/gp_display_st7565.c:89:86: warning: unused parameter ‘x1’ [-Wunused-parameter]
+   89 | static void st7565_repaint_part(gp_backend *self, gp_coord x0, gp_coord y0, gp_coord x1, gp_coord y1)
+      |                                                                             ~~~~~~~~~^~
+linux/gp_display_st7565.c:89:99: warning: unused parameter ‘y1’ [-Wunused-parameter]
+   89 | static void st7565_repaint_part(gp_backend *self, gp_coord x0, gp_coord y0, gp_coord x1, gp_coord y1)
+      |                                                                                          ~~~~~~~~~^~
+CC   -I(include backends) linux/gp_display_st77xx.o
+CC   -I(include backends) linux/gp_display_uc8179.o
+CC   -I(include backends) linux/gp_input_driver_kbd.o
+CC   -I(include backends) linux/gp_linux_backlight.o
+CC   -I(include backends) linux/gp_linux_gpio.o
+CC   -I(include backends) linux/gp_linux_input.o
+CC   -I(include backends) linux/gp_linux_input_hotplug.o
+CC   -I(include backends) linux/gp_linux_input_touchpad.o
+CC   -I(include backends) linux/gp_linux_spi.o
+AR   ../../build/libgfxprim-backends.a
+LD   ../../build/libgfxprim-backends.so.1.0.0
+LN   libgfxprim-backends.so.1
+LN   libgfxprim-backends.so
+DIR  /libs/grabbers
+DEP  -I(include grabbers) gp_v4l2.dep
+CC   -I(include grabbers) gp_v4l2.o
+AR   ../../build/libgfxprim-grabbers.a
+LD   ../../build/libgfxprim-grabbers.so.1.0.0
+LN   libgfxprim-grabbers.so.1
+LN   libgfxprim-grabbers.so
+DIR  /libs/widgets
+DEP  -I(include widgets) linux/gp_dir_cache.dep
+DEP  -I(include widgets) gp_widget_vhbox.dep
+DEP  -I(include widgets) gp_widget_uid.dep
+DEP  -I(include widgets) gp_widget_tbox.dep
+DEP  -I(include widgets) gp_widget_tattr.dep
+DEP  -I(include widgets) gp_widget_tabs.dep
+DEP  -I(include widgets) gp_widget_table.dep
+DEP  -I(include widgets) gp_widget_switch.dep
+DEP  -I(include widgets) gp_widget_stock_switch.dep
+DEP  -I(include widgets) gp_widget_stock.dep
+DEP  -I(include widgets) gp_widget_spin_button.dep
+DEP  -I(include widgets) gp_widget_size_units.dep
+DEP  -I(include widgets) gp_widget_scroll_area.dep
+DEP  -I(include widgets) gp_widgets_color_scheme.dep
+DEP  -I(include widgets) gp_widget_render.dep
+DEP  -I(include widgets) gp_widget_radio_button.dep
+DEP  -I(include widgets) gp_widget_pixmap.dep
+DEP  -I(include widgets) gp_widget_pbar.dep
+DEP  -I(include widgets) gp_widget_overlay.dep
+DEP  -I(include widgets) gp_widget_ops.dep
+DEP  -I(include widgets) gp_widget_markup.dep
+DEP  -I(include widgets) gp_widget_log.dep
+DEP  -I(include widgets) gp_widget_layout_switch.dep
+DEP  -I(include widgets) gp_widget_label.dep
+DEP  -I(include widgets) gp_widget_json.dep
+DEP  -I(include widgets) gp_widget_grid.dep
+DEP  -I(include widgets) gp_widget_graph.dep
+DEP  -I(include widgets) gp_widget_gfx.dep
+DEP  -I(include widgets) gp_widget_frame.dep
+DEP  -I(include widgets) gp_widget_event.dep
+DEP  -I(include widgets) gp_widget_class_int.dep
+DEP  -I(include widgets) gp_widget_class_choice.dep
+DEP  -I(include widgets) gp_widget_class_bool.dep
+DEP  -I(include widgets) gp_widget_checkbox.dep
+DEP  -I(include widgets) gp_widget.dep
+DEP  -I(include widgets) gp_widget_button.dep
+DEP  -I(include widgets) gp_string.dep
+DEP  -I(include widgets) gp_key_repeat_timer.dep
+DEP  -I(include widgets) gp_file_size.dep
+DEP  -I(include widgets) gp_dir_cache.dep
+DEP  -I(include widgets) gp_dialog_msg.dep
+DEP  -I(include widgets) gp_dialog_input.dep
+DEP  -I(include widgets) gp_dialog_file.dep
+DEP  -I(include widgets) gp_dialog.dep
+DEP  -I(include widgets) gp_date_time.dep
+DEP  -I(include widgets) gp_app_timer.dep
+DEP  -I(include widgets) gp_app_layout.dep
+DEP  -I(include widgets) gp_app_info.dep
+DEP  -I(include widgets) gp_app_event.dep
+CC   -I(include widgets) gp_app_event.o
+CC   -I(include widgets) gp_app_info.o
+CC   -I(include widgets) gp_app_layout.o
+CC   -I(include widgets) gp_app_timer.o
+CC   -I(include widgets) gp_date_time.o
+CC   -I(include widgets) gp_dialog.o
+CC   -I(include widgets) gp_dialog_file.o
+CC   -I(include widgets) gp_dialog_input.o
+CC   -I(include widgets) gp_dialog_msg.o
+CC   -I(include widgets) gp_dir_cache.o
+CC   -I(include widgets) gp_file_size.o
+CC   -I(include widgets) gp_key_repeat_timer.o
+CC   -I(include widgets) gp_string.o
+CC   -I(include widgets) gp_widget_button.o
+In file included from /usr/include/string.h:548,
+                 from gp_widget_button.c:9:
+In function ‘strcpy’,
+    inlined from ‘gp_widget_button_new’ at gp_widget_button.c:567:3:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:79:10: warning: ‘__builtin_strcpy’ offset 80 from the object at ‘ret’ is out of the bounds of referenced subobject ‘data’ with type ‘char[]’ at offset 80 [-Warray-bounds=]
+   79 |   return __builtin___strcpy_chk (__dest, __src, __glibc_objsize (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gp_widget_button.c: In function ‘gp_widget_button_new’:
+gp_widget_button.c:20:14: note: subobject ‘data’ declared here
+   20 |         char data[];
+      |              ^~~~
+CC   -I(include widgets) gp_widget.o
+CC   -I(include widgets) gp_widget_checkbox.o
+CC   -I(include widgets) gp_widget_class_bool.o
+CC   -I(include widgets) gp_widget_class_choice.o
+CC   -I(include widgets) gp_widget_class_int.o
+CC   -I(include widgets) gp_widget_event.o
+CC   -I(include widgets) gp_widget_frame.o
+CC   -I(include widgets) gp_widget_gfx.o
+CC   -I(include widgets) gp_widget_graph.o
+CC   -I(include widgets) gp_widget_grid.o
+CC   -I(include widgets) gp_widget_json.o
+CC   -I(include widgets) gp_widget_label.o
+CC   -I(include widgets) gp_widget_layout_switch.o
+CC   -I(include widgets) gp_widget_log.o
+CC   -I(include widgets) gp_widget_markup.o
+gp_widget_markup.c: In function ‘min_h’:
+gp_widget_markup.c:120:85: warning: passing argument 4 of ‘gp_markup_justify’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  120 |         markup->lines = gp_markup_justify(markup->markup, self->w, markup_width_cb, ctx);
+      |                                                                                     ^~~
+In file included from gp_widget_markup.c:14:
+../../include/utils/gp_markup_justify.h:62:119: note: expected ‘void *’ but argument is of type ‘const gp_widget_render_ctx *’
+   62 | gp_markup_lines *gp_markup_justify(gp_markup *self, unsigned int line_width, gp_markup_width_cb width_callback, void *priv);
+      |                                                                                                                 ~~~~~~^~~~
+CC   -I(include widgets) gp_widget_ops.o
+CC   -I(include widgets) gp_widget_overlay.o
+CC   -I(include widgets) gp_widget_pbar.o
+CC   -I(include widgets) gp_widget_pixmap.o
+CC   -I(include widgets) gp_widget_radio_button.o
+CC   -I(include widgets) gp_widget_render.o
+CC   -I(include widgets) gp_widgets_color_scheme.o
+CC   -I(include widgets) gp_widget_scroll_area.o
+CC   -I(include widgets) gp_widget_size_units.o
+CC   -I(include widgets) gp_widget_spin_button.o
+CC   -I(include widgets) gp_widget_stock.o
+CC   -I(include widgets) gp_widget_stock_switch.o
+CC   -I(include widgets) gp_widget_switch.o
+CC   -I(include widgets) gp_widget_table.o
+CC   -I(include widgets) gp_widget_tabs.o
+CC   -I(include widgets) gp_widget_tattr.o
+CC   -I(include widgets) gp_widget_tbox.o
+CC   -I(include widgets) gp_widget_uid.o
+CC   -I(include widgets) gp_widget_vhbox.o
+CC   -I(include widgets) linux/gp_dir_cache.o
+AR   ../../build/libgfxprim-widgets.a
+LD   ../../build/libgfxprim-widgets.so.1.0.0
+LN   libgfxprim-widgets.so.1
+LN   libgfxprim-widgets.so
+DIR  /build
+AR   libgfxprim.a
+LD   libgfxprim.so.1.0.0
+LN   libgfxprim.so.1
+LN   libgfxprim.so
+DIR  /pylib
+DIR  /pylib/gfxprim
+DIR  /pylib/gfxprim/core
+SWIG core
+LD   _c_core.so
+DIR  /pylib/gfxprim/loaders
+SWIG loaders
+LD   _c_loaders.so
+DIR  /pylib/gfxprim/backends
+SWIG backends
+LD   _c_backends.so
+DIR  /pylib/gfxprim/gfx
+SWIG gfx
+LD   _c_gfx.so
+DIR  /pylib/gfxprim/filters
+SWIG filters
+LD   _c_filters.so
+DIR  /pylib/gfxprim/text
+SWIG text
+../../../include/text/gp_font.h:231: Warning 462: Unable to set variable of type gp_glyphs [].
+../../../include/text/gp_font.h:271: Warning 451: Setting a const char * variable may leak memory.
+../../../include/text/gp_fonts.h:17: Warning 454: Setting a pointer/reference variable may leak memory.
+LD   _c_text.so
+text_wrap.c: In function ‘_wrap_gp_print_xxy__varargs__’:
+text_wrap.c:4330:94: warning: unused parameter ‘varargs’ [-Wunused-parameter]
+ 4330 | SWIGINTERN PyObject *_wrap_gp_print_xxy__varargs__(PyObject *self, PyObject *args, PyObject *varargs) {
+      |                                                                                    ~~~~~~~~~~^~~~~~~
+text_wrap.c: In function ‘_wrap_gp_print_xxy’:
+text_wrap.c:4429:51: warning: unused parameter ‘self’ [-Wunused-parameter]
+ 4429 | SWIGINTERN PyObject *_wrap_gp_print_xxy(PyObject *self, PyObject *args) {
+      |                                         ~~~~~~~~~~^~~~
+DIR  /pylib/gfxprim/input
+SWIG input
+LD   _c_input.so
+input_wrap.c: In function ‘_wrap_gp_ev_any_key_pressed___varargs__’:
+input_wrap.c:5480:104: warning: unused parameter ‘varargs’ [-Wunused-parameter]
+ 5480 | SWIGINTERN PyObject *_wrap_gp_ev_any_key_pressed___varargs__(PyObject *self, PyObject *args, PyObject *varargs) {
+      |                                                                                              ~~~~~~~~~~^~~~~~~
+input_wrap.c: In function ‘_wrap_gp_ev_any_key_pressed_’:
+input_wrap.c:5504:61: warning: unused parameter ‘self’ [-Wunused-parameter]
+ 5504 | SWIGINTERN PyObject *_wrap_gp_ev_any_key_pressed_(PyObject *self, PyObject *args) {
+      |                                                   ~~~~~~~~~~^~~~
+input_wrap.c: In function ‘_wrap_gp_ev_all_keys_pressed___varargs__’:
+input_wrap.c:5518:105: warning: unused parameter ‘varargs’ [-Wunused-parameter]
+ 5518 | SWIGINTERN PyObject *_wrap_gp_ev_all_keys_pressed___varargs__(PyObject *self, PyObject *args, PyObject *varargs) {
+      |                                                                                               ~~~~~~~~~~^~~~~~~
+input_wrap.c: In function ‘_wrap_gp_ev_all_keys_pressed_’:
+input_wrap.c:5542:62: warning: unused parameter ‘self’ [-Wunused-parameter]
+ 5542 | SWIGINTERN PyObject *_wrap_gp_ev_all_keys_pressed_(PyObject *self, PyObject *args) {
+      |                                                    ~~~~~~~~~~^~~~
+DIR  /pylib/gfxprim/grabbers
+SWIG grabbers
+LD   _c_grabbers.so
+DIR  /tests
+DIR  /tests/framework
+DEP  -I(include ) tst_timespec.dep
+DEP  -I(include ) tst_suite.dep
+DEP  -I(include ) tst_preload_FILE.dep
+DEP  -I(include ) tst_preload.dep
+DEP  -I(include ) tst_msg.dep
+DEP  -I(include ) tst_malloc_canaries.dep
+DEP  -I(include ) tst_main.dep
+DEP  -I(include ) tst_log.dep
+DEP  -I(include ) tst_job.dep
+DEP  -I(include ) test.dep
+CC   -I(include ) test.o
+test.c: In function ‘double_free’:
+test.c:101:9: warning: pointer ‘p’ used after ‘free’ [-Wuse-after-free]
+  101 |         free(p);
+      |         ^~~~~~~
+test.c:100:9: note: call to ‘free’ here
+  100 |         free(p);
+      |         ^~~~~~~
+test.c: In function ‘stack_overflow_fn’:
+test.c:34:5: warning: infinite recursion detected [-Winfinite-recursion]
+   34 | int stack_overflow_fn(void)
+      |     ^~~~~~~~~~~~~~~~~
+test.c:36:19: note: recursive call
+   36 |         int ret = stack_overflow_fn() + stack_overflow_fn();
+      |                   ^~~~~~~~~~~~~~~~~~~
+CC   -I(include ) tst_job.o
+CC   -I(include ) tst_log.o
+CC   -I(include ) tst_main.o
+CC   -I(include ) tst_malloc_canaries.o
+CC   -I(include ) tst_msg.o
+CC   -I(include ) tst_preload.o
+CC   -I(include ) tst_preload_FILE.o
+CC   -I(include ) tst_suite.o
+CC   -I(include ) tst_timespec.o
+LD   libtst_preload.so
+AR   libtst.a
+LD   test
+DIR  /tests/core
+CCT  write_pixels2.gen.c
+DEP  -I(include ) write_pixels2.gen.dep
+CCT  get_set_bits.gen.c
+DEP  -I(include ) get_set_bits.gen.dep
+CCT  convert_scale.gen.c
+DEP  -I(include ) convert_scale.gen.dep
+CCT  blit_conv.gen.c
+DEP  -I(include ) blit_conv.gen.dep
+CCT  convert.gen.c
+DEP  -I(include ) convert.gen.dep
+CCT  get_put_pixel.gen.c
+DEP  -I(include ) get_put_pixel.gen.dep
+CCT  write_pixel.gen.c
+DEP  -I(include ) write_pixel.gen.dep
+DEP  -I(include ) sub_pixmap_put_pixel.dep
+DEP  -I(include ) debug.dep
+DEP  -I(include ) blit_clipped.dep
+DEP  -I(include ) pixel.dep
+DEP  -I(include ) pixmap.dep
+CC   -I(include ) pixmap.o
+CC   -I(include ) pixel.o
+CC   -I(include ) blit_clipped.o
+CC   -I(include ) debug.o
+CC   -I(include ) sub_pixmap_put_pixel.o
+CC   -I(include ) write_pixel.gen.o
+CC   -I(include ) get_put_pixel.gen.o
+CC   -I(include ) convert.gen.o
+CC   -I(include ) blit_conv.gen.o
+CC   -I(include ) convert_scale.gen.o
+CC   -I(include ) get_set_bits.gen.o
+CC   -I(include ) write_pixels2.gen.o
+LD   write_pixel.gen
+LD   pixel
+LD   pixmap
+LD   get_put_pixel.gen
+LD   convert.gen
+LD   blit_conv.gen
+LD   convert_scale.gen
+LD   get_set_bits.gen
+LD   blit_clipped
+LD   debug
+LD   write_pixels2.gen
+LD   sub_pixmap_put_pixel
+DIR  /tests/loaders
+CCT  save_abort.gen.c
+DEP  -I(include ) save_abort.gen.dep
+CCT  save_load.gen.c
+DEP  -I(include ) save_load.gen.dep
+DEP  -I(include ) heic.dep
+DEP  -I(include ) container.dep
+DEP  -I(include ) ico.dep
+DEP  -I(include ) line_convert.dep
+DEP  -I(include ) exif.dep
+DEP  -I(include ) data_storage.dep
+DEP  -I(include ) loader.dep
+DEP  -I(include ) jpg.dep
+DEP  -I(include ) pcx.dep
+DEP  -I(include ) pnm.dep
+DEP  -I(include ) io.dep
+DEP  -I(include ) gif.dep
+DEP  -I(include ) zip.dep
+DEP  -I(include ) ppm.dep
+DEP  -I(include ) pgm.dep
+DEP  -I(include ) pbm.dep
+DEP  -I(include ) png.dep
+DEP  -I(include ) loaders_suite.dep
+CC   -I(include ) loaders_suite.o
+CC   -I(include ) png.o
+CC   -I(include ) pbm.o
+CC   -I(include ) pgm.o
+CC   -I(include ) ppm.o
+CC   -I(include ) zip.o
+CC   -I(include ) gif.o
+CC   -I(include ) io.o
+CC   -I(include ) pnm.o
+CC   -I(include ) pcx.o
+CC   -I(include ) jpg.o
+CC   -I(include ) loader.o
+CC   -I(include ) data_storage.o
+CC   -I(include ) exif.o
+CC   -I(include ) line_convert.o
+CC   -I(include ) ico.o
+CC   -I(include ) container.o
+CC   -I(include ) heic.o
+CC   -I(include ) save_load.gen.o
+CC   -I(include ) save_abort.gen.o
+LD   loaders_suite
+LD   png
+LD   pbm
+LD   pgm
+LD   ppm
+LD   pnm
+LD   save_load.gen
+LD   save_abort.gen
+LD   zip
+LD   gif
+LD   pcx
+LD   io
+LD   jpg
+LD   loader
+LD   data_storage
+LD   exif
+LD   line_convert
+LD   ico
+LD   container
+LD   heic
+DIR  /tests/gfx
+CCT  gfx_benchmark.gen.c
+DEP  -I(include ) gfx_benchmark.gen.dep
+CCT  fill_triangle.gen.c
+DEP  -I(include ) fill_triangle.gen.dep
+CCT  line_symmetry.gen.c
+DEP  -I(include ) line_symmetry.gen.dep
+CCT  api_coverage.gen.c
+DEP  -I(include ) api_coverage.gen.dep
+DEP  -I(include ) vline.dep
+DEP  -I(include ) polygon.dep
+DEP  -I(include ) line_th.dep
+DEP  -I(include ) line.dep
+DEP  -I(include ) hline.dep
+DEP  -I(include ) fill_triangle.dep
+DEP  -I(include ) fill_rect.dep
+DEP  -I(include ) fill_ellipse.dep
+DEP  -I(include ) fill_circle.dep
+DEP  -I(include ) ellipse.dep
+DEP  -I(include ) common.dep
+DEP  -I(include ) circle_seg.dep
+DEP  -I(include ) circle.dep
+CC   -I(include ) circle.o
+CC   -I(include ) circle_seg.o
+CC   -I(include ) common.o
+CC   -I(include ) ellipse.o
+CC   -I(include ) fill_circle.o
+CC   -I(include ) fill_ellipse.o
+CC   -I(include ) fill_rect.o
+CC   -I(include ) fill_triangle.o
+CC   -I(include ) hline.o
+CC   -I(include ) line.o
+CC   -I(include ) line_th.o
+CC   -I(include ) polygon.o
+CC   -I(include ) vline.o
+CC   -I(include ) api_coverage.gen.o
+CC   -I(include ) line_symmetry.gen.o
+CC   -I(include ) fill_triangle.gen.o
+CC   -I(include ) gfx_benchmark.gen.o
+LD   circle
+LD   fill_circle
+LD   line
+LD   circle_seg
+LD   polygon
+LD   ellipse
+LD   hline
+LD   vline
+LD   fill_ellipse
+LD   fill_rect
+LD   api_coverage.gen
+LD   line_symmetry.gen
+LD   fill_triangle.gen
+LD   fill_triangle
+LD   gfx_benchmark.gen
+LD   line_th
+DIR  /tests/filters
+CCT  filters_compare.gen.c
+DEP  -I(include ) filters_compare.gen.dep
+CCT  api_coverage.gen.c
+DEP  -I(include ) api_coverage.gen.dep
+DEP  -I(include ) dither_bench.dep
+DEP  -I(include ) linear_convolution.dep
+DEP  -I(include ) common.dep
+DEP  -I(include ) filter_mirror_h.dep
+CC   -I(include ) filter_mirror_h.o
+CC   -I(include ) common.o
+CC   -I(include ) linear_convolution.o
+CC   -I(include ) dither_bench.o
+CC   -I(include ) api_coverage.gen.o
+CC   -I(include ) filters_compare.gen.o
+LD   filter_mirror_h
+LD   api_coverage.gen
+LD   filters_compare.gen
+LD   linear_convolution
+LD   dither_bench
+DIR  /tests/input
+DEP  -I(include ) keymap.dep
+DEP  -I(include ) key_val.dep
+DEP  -I(include ) event_queue.dep
+DEP  -I(include ) time_stamp.dep
+CC   -I(include ) time_stamp.o
+CC   -I(include ) event_queue.o
+CC   -I(include ) key_val.o
+CC   -I(include ) keymap.o
+LD   time_stamp
+LD   event_queue
+LD   key_val
+LD   keymap
+DIR  /tests/utils
+DEP  -I(include ) strconv.dep
+DEP  -I(include ) seek.dep
+DEP  -I(include ) cbuffer.dep
+DEP  -I(include ) heap.dep
+DEP  -I(include ) balloc.dep
+DEP  -I(include ) timer.dep
+DEP  -I(include ) path.dep
+DEP  -I(include ) json_serdes.dep
+DEP  -I(include ) markup_justify.dep
+DEP  -I(include ) markup_gfxprim.dep
+DEP  -I(include ) markup_html.dep
+DEP  -I(include ) markup_plaintext.dep
+DEP  -I(include ) avl_tree.dep
+DEP  -I(include ) trie.dep
+DEP  -I(include ) cfg.dep
+DEP  -I(include ) json_writer.dep
+DEP  -I(include ) json_reader.dep
+DEP  -I(include ) json.dep
+DEP  -I(include ) utf.dep
+DEP  -I(include ) htable.dep
+DEP  -I(include ) list.dep
+DEP  -I(include ) vec_str.dep
+DEP  -I(include ) matrix.dep
+DEP  -I(include ) vec.dep
+CC   -I(include ) vec.o
+CC   -I(include ) matrix.o
+CC   -I(include ) vec_str.o
+CC   -I(include ) list.o
+CC   -I(include ) htable.o
+CC   -I(include ) utf.o
+CC   -I(include ) json.o
+CC   -I(include ) json_reader.o
+CC   -I(include ) json_writer.o
+CC   -I(include ) cfg.o
+CC   -I(include ) trie.o
+CC   -I(include ) avl_tree.o
+CC   -I(include ) markup_plaintext.o
+CC   -I(include ) markup_html.o
+CC   -I(include ) markup_gfxprim.o
+CC   -I(include ) markup_justify.o
+CC   -I(include ) json_serdes.o
+CC   -I(include ) path.o
+CC   -I(include ) timer.o
+CC   -I(include ) balloc.o
+CC   -I(include ) heap.o
+CC   -I(include ) cbuffer.o
+CC   -I(include ) seek.o
+CC   -I(include ) strconv.o
+LD   vec
+LD   matrix
+LD   vec_str
+LD   list
+LD   htable
+LD   utf
+LD   json
+LD   json_reader
+LD   json_writer
+LD   cfg
+LD   trie
+LD   avl_tree
+LD   markup_plaintext
+LD   markup_html
+LD   markup_gfxprim
+LD   markup_justify
+LD   json_serdes
+LD   path
+LD   timer
+LD   balloc
+LD   heap
+LD   cbuffer
+LD   seek
+LD   strconv
+DIR  /tests/widgets
+DEP  -I(include ) dialog_file.dep
+DEP  -I(include ) frame.dep
+DEP  -I(include ) app_event.dep
+DEP  -I(include ) spinbutton_json.dep
+DEP  -I(include ) radiobutton_json.dep
+DEP  -I(include ) json_benchmark.dep
+DEP  -I(include ) json.dep
+DEP  -I(include ) label_json.dep
+DEP  -I(include ) checkbox_json.dep
+DEP  -I(include ) grid_json.dep
+DEP  -I(include ) button_json.dep
+DEP  -I(include ) size_units.dep
+DEP  -I(include ) grid.dep
+DEP  -I(include ) label.dep
+DEP  -I(include ) tabs.dep
+DEP  -I(include ) checkbox.dep
+DEP  -I(include ) button.dep
+DEP  -I(include ) tattr.dep
+DEP  -I(include ) tbox.dep
+CC   -I(include ) tbox.o
+CC   -I(include ) tattr.o
+CC   -I(include ) button.o
+CC   -I(include ) checkbox.o
+CC   -I(include ) tabs.o
+CC   -I(include ) label.o
+CC   -I(include ) grid.o
+CC   -I(include ) size_units.o
+CC   -I(include ) button_json.o
+CC   -I(include ) grid_json.o
+CC   -I(include ) checkbox_json.o
+CC   -I(include ) label_json.o
+CC   -I(include ) json.o
+CC   -I(include ) json_benchmark.o
+CC   -I(include ) radiobutton_json.o
+CC   -I(include ) spinbutton_json.o
+CC   -I(include ) app_event.o
+CC   -I(include ) frame.o
+CC   -I(include ) dialog_file.o
+LD   tbox
+LD   tattr
+LD   button
+LD   checkbox
+LD   tabs
+LD   label
+LD   grid
+LD   size_units
+LD   button_json
+LD   grid_json
+LD   checkbox_json
+LD   label_json
+LD   json
+LD   json_benchmark
+LD   radiobutton_json
+LD   spinbutton_json
+LD   app_event
+LD   frame
+LD   dialog_file
+DIR  /tests/text
+DEP  -I(include ) text_benchmark.dep
+CC   -I(include ) text_benchmark.o
+LD   text_benchmark
+DIR  /demos
+DIR  /demos/grinder
+DEP  -I(include core gfx) params.dep
+DEP  -I(include core gfx) histogram.dep
+DEP  -I(include core gfx) grinder.dep
+CC   -I(include core gfx) grinder.o
+CC   -I(include core gfx) histogram.o
+CC   -I(include core gfx) params.o
+LD   grinder
+DIR  /demos/spiv
+DEP  -I(include ) spiv_help.dep
+DEP  -I(include ) spiv_config.dep
+DEP  -I(include ) spiv.dep
+DEP  -I(include ) image_loader.dep
+DEP  -I(include ) image_list.dep
+DEP  -I(include ) image_cache.dep
+DEP  -I(include ) image_actions.dep
+DEP  -I(include ) cpu_timer.dep
+DEP  -I(include ) cfg.dep
+CC   -I(include ) cfg.o
+cfg.c: In function ‘cfg_getopt’:
+cfg.c:86:46: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   86 |                         if ((unsigned)i->opt >= sizeof(gopts)/(sizeof(*gopts))) {
+      |                                              ^~
+cfg.c:127:49: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  127 |                         if ((unsigned)((char)c) >= sizeof(gopts)/(sizeof(*gopts))) {
+      |                                                 ^~
+CC   -I(include ) cpu_timer.o
+CC   -I(include ) image_actions.o
+CC   -I(include ) image_cache.o
+CC   -I(include ) image_list.o
+CC   -I(include ) image_loader.o
+CC   -I(include ) spiv.o
+spiv.c: In function ‘image_loader’:
+spiv.c:601:37: warning: unused variable ‘pixmap’ [-Wunused-variable]
+  601 |         gp_pixmap *img, *orig_img, *pixmap = backend->pixmap;
+      |                                     ^~~~~~
+CC   -I(include ) spiv_config.o
+CC   -I(include ) spiv_help.o
+LD   spiv
+DIR  /demos/particle
+DEP  -I(include ) space.dep
+DEP  -I(include ) particle_demo.dep
+CC   -I(include ) particle_demo.o
+CC   -I(include ) space.o
+LD   particle_demo
+DIR  /demos/ttf2img
+DEP  -I(include ) ttf2img.dep
+CC   -I(include ) ttf2img.o
+LD   ttf2img
+DIR  /demos/c_simple
+Disabling SDL_glue
+DEP  -I(include ) zip_container.dep
+DEP  -I(include ) x11_windows.dep
+DEP  -I(include ) weighted_median.dep
+DEP  -I(include ) virtual_backend_example.dep
+DEP  -I(include ) version.dep
+DEP  -I(include ) vector.dep
+DEP  -I(include ) v4l2_show.dep
+DEP  -I(include ) v4l2_grab.dep
+DEP  -I(include ) update_rect_test.dep
+DEP  -I(include ) unicodetest.dep
+DEP  -I(include ) timers.dep
+DEP  -I(include ) textaligntest.dep
+DEP  -I(include ) showimage.dep
+DEP  -I(include ) shapetest.dep
+DEP  -I(include ) randomshapetest.dep
+DEP  -I(include ) proxy_backend.dep
+DEP  -I(include ) pretty_print.dep
+DEP  -I(include ) meta_data.dep
+DEP  -I(include ) memory_io.dep
+DEP  -I(include ) matrix.dep
+DEP  -I(include ) loaders_register.dep
+DEP  -I(include ) loaders_example.dep
+DEP  -I(include ) loaders.dep
+DEP  -I(include ) linetest.dep
+DEP  -I(include ) koch.dep
+DEP  -I(include ) json_writer_file.dep
+DEP  -I(include ) json_writer.dep
+DEP  -I(include ) input_example.dep
+DEP  -I(include ) gfx_koch.dep
+DEP  -I(include ) gaussian_noise.dep
+DEP  -I(include ) fonttest.dep
+DEP  -I(include ) filters_symmetry.dep
+DEP  -I(include ) fileview.dep
+DEP  -I(include ) elf_note.dep
+DEP  -I(include ) draw_glyph.dep
+DEP  -I(include ) dpi_check.dep
+DEP  -I(include ) debug_handler.dep
+DEP  -I(include ) data_storage.dep
+DEP  -I(include ) convolution.dep
+DEP  -I(include ) blittest.dep
+DEP  -I(include ) bbox.dep
+DEP  -I(include ) backend_timers_example.dep
+DEP  -I(include ) backend_tasks_example.dep
+DEP  -I(include ) backend_example.dep
+DEP  -I(include ) backend_cursor.dep
+DEP  -I(include ) SDL2_glue.dep
+Disabling SDL_glue
+CC   -I(include ) SDL2_glue.o
+CC   -I(include ) backend_cursor.o
+CC   -I(include ) backend_example.o
+CC   -I(include ) backend_tasks_example.o
+CC   -I(include ) backend_timers_example.o
+CC   -I(include ) bbox.o
+CC   -I(include ) blittest.o
+CC   -I(include ) convolution.o
+CC   -I(include ) data_storage.o
+CC   -I(include ) debug_handler.o
+CC   -I(include ) dpi_check.o
+CC   -I(include ) draw_glyph.o
+CC   -I(include ) elf_note.o
+CC   -I(include ) fileview.o
+CC   -I(include ) filters_symmetry.o
+CC   -I(include ) fonttest.o
+CC   -I(include ) gaussian_noise.o
+CC   -I(include ) gfx_koch.o
+CC   -I(include ) input_example.o
+CC   -I(include ) json_writer.o
+CC   -I(include ) json_writer_file.o
+CC   -I(include ) koch.o
+CC   -I(include ) linetest.o
+CC   -I(include ) loaders.o
+CC   -I(include ) loaders_example.o
+CC   -I(include ) loaders_register.o
+CC   -I(include ) matrix.o
+CC   -I(include ) memory_io.o
+CC   -I(include ) meta_data.o
+CC   -I(include ) pretty_print.o
+CC   -I(include ) proxy_backend.o
+CC   -I(include ) randomshapetest.o
+CC   -I(include ) shapetest.o
+CC   -I(include ) showimage.o
+CC   -I(include ) textaligntest.o
+CC   -I(include ) timers.o
+CC   -I(include ) unicodetest.o
+CC   -I(include ) update_rect_test.o
+CC   -I(include ) v4l2_grab.o
+CC   -I(include ) v4l2_show.o
+CC   -I(include ) vector.o
+CC   -I(include ) version.o
+CC   -I(include ) virtual_backend_example.o
+CC   -I(include ) weighted_median.o
+weighted_median.c: In function ‘main’:
+weighted_median.c:104:22: warning: unused variable ‘crazy’ [-Wunused-variable]
+  104 |         unsigned int crazy[] = {
+      |                      ^~~~~
+weighted_median.c:90:22: warning: unused variable ‘cross’ [-Wunused-variable]
+   90 |         unsigned int cross[] = {
+      |                      ^~~~~
+weighted_median.c:76:22: warning: unused variable ‘calpen’ [-Wunused-variable]
+   76 |         unsigned int calpen[] = {
+      |                      ^~~~~~
+CC   -I(include ) x11_windows.o
+CC   -I(include ) zip_container.o
+LD   backend_example
+LD   loaders_example
+LD   loaders
+LD   filters_symmetry
+LD   gfx_koch
+LD   virtual_backend_example
+LD   meta_data
+LD   showimage
+LD   v4l2_show
+LD   v4l2_grab
+LD   convolution
+LD   weighted_median
+LD   shapetest
+LD   koch
+LD   input_example
+LD   fileview
+LD   linetest
+LD   randomshapetest
+LD   fonttest
+LD   loaders_register
+LD   blittest
+LD   textaligntest
+LD   x11_windows
+LD   debug_handler
+LD   gaussian_noise
+LD   version
+LD   pretty_print
+LD   timers
+LD   zip_container
+LD   backend_timers_example
+LD   memory_io
+LD   data_storage
+LD   vector
+LD   matrix
+LD   proxy_backend
+LD   bbox
+LD   backend_tasks_example
+LD   json_writer
+LD   draw_glyph
+LD   dpi_check
+LD   unicodetest
+LD   backend_cursor
+LD   json_writer_file
+LD   elf_note
+LD   update_rect_test
+LD   SDL2_glue
+DIR  /demos/bogoman
+DEP  -I(include ) bogoman_render.dep
+DEP  -I(include ) bogoman_map.dep
+DEP  -I(include ) bogoman_loader.dep
+DEP  -I(include ) bogoman_debug.dep
+DEP  -I(include ) bogoman.dep
+CC   -I(include ) bogoman.o
+CC   -I(include ) bogoman_debug.o
+CC   -I(include ) bogoman_loader.o
+CC   -I(include ) bogoman_map.o
+CC   -I(include ) bogoman_render.o
+LD   bogoman
+DIR  /demos/widgets
+DEP  -I(include ) todo.dep
+DEP  -I(include ) tabs_example.dep
+DEP  -I(include ) tabs.dep
+DEP  -I(include ) table_example.dep
+DEP  -I(include ) showimage.dep
+DEP  -I(include ) show_layout.dep
+DEP  -I(include ) scroll_area_example.dep
+DEP  -I(include ) pixmap_example.dep
+DEP  -I(include ) overlay_example.dep
+DEP  -I(include ) nested_dialogs.dep
+DEP  -I(include ) message_dialog.dep
+DEP  -I(include ) markup_example.dep
+DEP  -I(include ) login_example.dep
+DEP  -I(include ) log.dep
+DEP  -I(include ) layout_switch_example.dep
+DEP  -I(include ) grid_move_widget.dep
+DEP  -I(include ) graph.dep
+DEP  -I(include ) focus.dep
+DEP  -I(include ) file_dialogs.dep
+DEP  -I(include ) example.dep
+DEP  -I(include ) disk_free.dep
+DEP  -I(include ) disable.dep
+DEP  -I(include ) datetime.dep
+DEP  -I(include ) clock.dep
+DEP  -I(include ) choice_json_arr.dep
+DEP  -I(include ) choice_arr.dep
+DEP  -I(include ) choice.dep
+CC   -I(include ) choice.o
+CC   -I(include ) choice_arr.o
+CC   -I(include ) choice_json_arr.o
+CC   -I(include ) clock.o
+CC   -I(include ) datetime.o
+CC   -I(include ) disable.o
+CC   -I(include ) disk_free.o
+CC   -I(include ) example.o
+CC   -I(include ) file_dialogs.o
+CC   -I(include ) focus.o
+CC   -I(include ) graph.o
+CC   -I(include ) grid_move_widget.o
+CC   -I(include ) layout_switch_example.o
+CC   -I(include ) log.o
+CC   -I(include ) login_example.o
+CC   -I(include ) markup_example.o
+CC   -I(include ) message_dialog.o
+CC   -I(include ) nested_dialogs.o
+CC   -I(include ) overlay_example.o
+CC   -I(include ) pixmap_example.o
+CC   -I(include ) scroll_area_example.o
+CC   -I(include ) show_layout.o
+CC   -I(include ) showimage.o
+CC   -I(include ) table_example.o
+CC   -I(include ) tabs.o
+CC   -I(include ) tabs_example.o
+CC   -I(include ) todo.o
+LD   show_layout
+LD   clock
+LD   todo
+LD   pixmap_example
+LD   example
+LD   grid_move_widget
+LD   tabs_example
+LD   markup_example
+LD   layout_switch_example
+LD   overlay_example
+LD   showimage
+LD   scroll_area_example
+LD   datetime
+LD   login_example
+LD   file_dialogs
+LD   tabs
+LD   disk_free
+LD   message_dialog
+LD   table_example
+LD   focus
+LD   choice
+LD   log
+LD   disable
+LD   nested_dialogs
+LD   choice_arr
+LD   choice_json_arr
+LD   graph

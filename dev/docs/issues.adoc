@@ -1,0 +1,125 @@
+= Issues
+
+
+== pylib
+
+`/workspaces/gfxprim-gfxprim/pylib/gfxprim/Makefile`
+
+build error in `core` subdirectory:
+----
+❯ make
+DIR  /core
+SWIG core
+LD   _c_core.so
+core_wrap.c: In function ‘delete_gp_pixmap’:
+core_wrap.c:3783:130: error: ‘struct gp_pixmap’ has no member named ‘free_pixels’
+ 3783 |         gp_debug_print(2, "core.i", __FUNCTION__, 96, "[wrapper] gp_pixmap_free (%dx%d raw, free_pixels:%d)",self->w,self->h,self->free_pixels)
+      |                                                                                                                                  ^~
+make[1]: *** [../../../pywrap.mk:41: _c_core.so] Error 1
+make: *** [../../post.mk:99: core] Error 2
+----
+
+== demos
+
+----
+❯ ./runpytest.sh ./blur.py 0.25 ./ball_blue.png 
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././blur.py", line 23, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././blur.py", line 18, in main
+    filters.gaussian_blur(img, img, radii, radii)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gfxprim.filters' has no attribute 'gaussian_blur'
+----
+
+
+----
+❯ ./runpytest.sh ./gfx.py                      
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././gfx.py", line 6, in <module>
+    import gfxprim.gfx as gfx
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/gfx/__init__.py", line 8, in <module>
+    from . import c_gfx
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/gfx/c_gfx.py", line 10, in <module>
+    from . import _c_gfx
+ImportError: /workspaces/gfxprim-gfxprim/pylib/gfxprim/gfx/_c_gfx.so: undefined symbol: gp_fill_triangle_raw
+----
+
+----
+❯ ./runpytest.sh ./invert.py ball_green.png 
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././invert.py", line 21, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././invert.py", line 16, in main
+    img.filters.invert(img);
+    ^^^^^^^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'filters'
+----
+
+----
+❯ ./runpytest.sh ./resize.py ball_green.png out.png
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././resize.py", line 21, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././resize.py", line 16, in main
+    res = src.filters.resize_linear_lf_int_alloc(src.w//2, src.h//2)
+          ^^^^^^^^^^^
+AttributeError: 'gp_pixmap' object has no attribute 'filters'
+----
+
+----
+❯ ./runpytest.sh ./blit.py ball_blue.png 
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././blit.py", line 92, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././blit.py", line 70, in main
+    ev = bk.poll_event()
+         ^^^^^^^^^^^^^^^
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/backends/_extend_backend.py", line 37, in poll_event
+    if c_backends.gp_backend_poll_event(self, ev) != 0:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gfxprim.backends.c_backends' has no attribute 'gp_backend_poll_event'. Did you mean: 'gp_backend_poll_rem'?
+----
+
+
+----
+❯ ./runpytest.sh ./backends.py 
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/././backends.py", line 7, in <module>
+    import gfxprim.gfx as gfx
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/gfx/__init__.py", line 8, in <module>
+    from . import c_gfx
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/gfx/c_gfx.py", line 10, in <module>
+    from . import _c_gfx
+ImportError: /workspaces/gfxprim-gfxprim/pylib/gfxprim/gfx/_c_gfx.so: undefined symbol: gp_fill_triangle_raw
+----
+
+
+----
+❯ PYTHONPATH=$WORKSPACE_ROOT/pylib ./dev/py/test_import_gfxprim.py
+Importing gfxprim modules...
+sys.path: ['/workspaces/gfxprim-gfxprim/dev/py', '/workspaces/gfxprim-gfxprim/pylib', '/usr/lib/python312.zip', '/usr/lib/python3.12', '/usr/lib/python3.12/lib-dynload', '/usr/local/lib/python3.12/dist-packages', '/usr/lib/python3/dist-packages']
+/workspaces/gfxprim-gfxprim/pylib/gfxprim/grabbers/__init__.py:46: SyntaxWarning: invalid escape sequence '\w'
+  '^\w+_swigregister$',
+/workspaces/gfxprim-gfxprim/pylib/gfxprim/grabbers/__init__.py:47: SyntaxWarning: invalid escape sequence '\w'
+  '^_\w+$'])
+All gfxprim modules imported successfully.
+----
+
+
+=== gp_backend_poll_event
+
+----
+gfxprim-gfxprim/demos/py_simple on  dev/0 [⇡] via △ v3.31.10 via 🐍 v3.12.3 
+❯ ./runpytest.sh blit.py $WORKSPACE_ROOT/dev/resources/images/ball.ppm 
+Traceback (most recent call last):
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./blit.py", line 92, in <module>
+    main()
+  File "/workspaces/gfxprim-gfxprim/demos/py_simple/./blit.py", line 70, in main
+    ev = bk.poll_event()
+         ^^^^^^^^^^^^^^^
+  File "/workspaces/gfxprim-gfxprim/pylib/gfxprim/backends/_extend_backend.py", line 37, in poll_event
+    if c_backends.gp_backend_poll_event(self, ev) != 0:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gfxprim.backends.c_backends' has no attribute 'gp_backend_poll_event'. Did you mean: 'gp_backend_poll_rem'?
+----

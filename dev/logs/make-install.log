@@ -1,0 +1,89 @@
+DIR  /build
+MKDIR /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig/
+CP    gfxprim-backends.pc /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig//gfxprim-backends.pc
+CP    gfxprim-grabbers.pc /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig//gfxprim-grabbers.pc
+CP    gfxprim-loaders.pc /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig//gfxprim-loaders.pc
+CP    gfxprim.pc /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig//gfxprim.pc
+CP    gfxprim-utils.pc /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig//gfxprim-utils.pc
+CP    gfxprim-widgets.pc /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/pkgconfig//gfxprim-widgets.pc
+DIR  /pylib
+DIR  /pylib/gfxprim
+DIR  /pylib/gfxprim/core
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/core
+      -> __init__.py
+      -> c_core.py
+      -> _c_core.so
+      -> C.py
+DIR  /pylib/gfxprim/loaders
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/loaders
+      -> __init__.py
+      -> c_loaders.py
+      -> _c_loaders.so
+DIR  /pylib/gfxprim/backends
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/backends
+      -> _extend_backend.py
+      -> __init__.py
+      -> c_backends.py
+      -> _c_backends.so
+DIR  /pylib/gfxprim/gfx
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/gfx
+      -> C.py
+      -> __init__.py
+      -> c_gfx.py
+      -> _c_gfx.so
+DIR  /pylib/gfxprim/filters
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/filters
+      -> __init__.py
+      -> c_filters.py
+      -> _c_filters.so
+DIR  /pylib/gfxprim/text
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/text
+      -> C.py
+      -> __init__.py
+      -> c_text.py
+      -> _c_text.so
+DIR  /pylib/gfxprim/input
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/input
+      -> __init__.py
+      -> c_input.py
+      -> _c_input.so
+DIR  /pylib/gfxprim/grabbers
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/grabbers
+      -> __init__.py
+      -> c_grabbers.py
+      -> _c_grabbers.so
+DEST /workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib/python3.12/gfxprim/
+      -> __init__.py
+      -> utils.py
+DIR  /demos
+DIR  /demos/grinder
+make[2]: Nothing to be done for 'install'.
+DIR  /demos/spiv
+MKDIR /workspaces/gfxprim-gfxprim/dev/install/gfxprim/bin
+CP    spiv /workspaces/gfxprim-gfxprim/dev/install/gfxprim/bin
+MKDIR /workspaces/gfxprim-gfxprim/dev/install/gfxprim/share/man/man1
+CP    spiv.1 /workspaces/gfxprim-gfxprim/dev/install/gfxprim/share/man/man1
+DIR  /demos/particle
+make[2]: Nothing to be done for 'install'.
+DIR  /demos/ttf2img
+make[2]: Nothing to be done for 'install'.
+DIR  /demos/c_simple
+Disabling SDL_glue
+make[2]: Nothing to be done for 'install'.
+DIR  /demos/bogoman
+make[2]: Nothing to be done for 'install'.
+DIR  /demos/widgets
+make[2]: Nothing to be done for 'install'.
+INSTALL headers (//workspaces/gfxprim-gfxprim/dev/install/gfxprim/include)
+ backends
+ core
+ filters
+ gfx
+ grabbers
+ input
+ loaders
+ text
+ utils
+ widgets
+INSTALL libraries (//workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib)
+INSTALL binaries

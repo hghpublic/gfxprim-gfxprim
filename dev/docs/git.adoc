@@ -1,0 +1,10 @@
+= git
+
+== rebase on top of new master
+
+[source, shell]
+----
+❯ git rebase -Xours origin/master
+----
+
+Then fix any conflicts and continue the rebase.

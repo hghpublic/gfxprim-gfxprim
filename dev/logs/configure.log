@@ -1,0 +1,270 @@
+Basic checks
+------------
+Checking for working compiler (gcc) ... Yes
+
+Include search paths
+--------------------
+ "/usr/lib/gcc/aarch64-linux-gnu/14/include"
+ "/usr/local/include"
+ "/usr/include/aarch64-linux-gnu"
+ "/usr/include"
+
+Checking for working swig ... Yes
+Checking for python-config ... Yes
+Whether to define _FORTIFY_SOURCE ... No
+Checking for -Wimplicit-fallthrough=0 ... Yes
+Checking for python-config Python version ... 3.12
+Checking for lib directory ... lib
+
+Checking for libraries
+----------------------
+Checking for 'png.h' ... Yes
+ (/usr/include/png.h)
+
+Checking for 'SDL2/SDL.h' ... Yes
+ (/usr/include/SDL2/SDL.h)
+
+Checking for 'jpeglib.h' ... Yes
+ (/usr/include/jpeglib.h)
+
+Checking for 'webp/types.h' ... Yes
+ (/usr/include/webp/types.h)
+
+Checking for 'libheif/heif.h' ... No
+
+Checking for 'openjpeg-2.0/openjpeg.h' ... No
+
+Checking for 'gif_lib.h' ... Yes
+ (/usr/include/gif_lib.h)
+
+Checking for 'tiffio.h' ... Yes
+ (/usr/include/aarch64-linux-gnu/tiffio.h)
+
+Checking for 'zlib.h' ... Yes
+ (/usr/include/zlib.h)
+
+Checking for 'archive.h' ... No
+
+Checking for 'X11/extensions/Xrandr.h' ... Yes
+ (/usr/include/X11/extensions/Xrandr.h)
+
+Checking for 'X11/Xlib.h' ... Yes
+ (/usr/include/X11/Xlib.h)
+
+Checking for 'X11/extensions/Xfixes.h' ... Yes
+ (/usr/include/X11/extensions/Xfixes.h)
+
+Checking for 'xcb/xcb.h' ... Yes
+ (/usr/include/xcb/xcb.h)
+
+Checking for 'xcb/xcb_keysyms.h' ... No
+
+Checking for 'xcb/xcb_errors.h' ... No
+
+Checking for 'X11/extensions/XShm.h' ... Yes
+ (/usr/include/X11/extensions/XShm.h)
+
+Checking for 'aalib.h' ... No
+
+Checking for 'ft2build.h' ... No
+
+Checking for 'freetype2/ft2build.h' ... Yes
+ (/usr/include/freetype2/ft2build.h)
+
+Checking for 'fontconfig/fontconfig.h' ... Yes
+ (/usr/include/fontconfig/fontconfig.h)
+
+Checking for 'dlfcn.h' ... Yes
+ (/usr/include/dlfcn.h)
+
+Checking for 'linux/videodev2.h' ... Yes
+ (/usr/include/linux/videodev2.h)
+
+Checking for 'pthread.h' ... Yes
+ (/usr/include/pthread.h)
+
+Checking for 'sys/mman.h' ... Yes
+ (/usr/include/aarch64-linux-gnu/sys/mman.h)
+
+Checking for 'drm/drm.h' ... Yes
+ (/usr/include/drm/drm.h)
+
+Checking for 'libdrm/drm.h' ... Yes
+ (/usr/include/libdrm/drm.h)
+
+Checking for 'xkbcommon/xkbcommon.h' ... Yes
+ (/usr/include/xkbcommon/xkbcommon.h)
+
+Checking for 'wayland-client.h' ... Yes
+ (/usr/include/wayland-client.h)
+
+Checking for backtrace() ... Yes
+
+Settings and variables
+----------------------
+              CC : 'gcc'
+                  - Path/name of the C compiler
+
+          CFLAGS : '-W -Wall -Wextra -O2 -ggdb -std=gnu23'
+                  - C compiler flags
+
+     CFLAGS_WNIF : '-Wimplicit-fallthrough=0'
+                  - Disable implicit fallthrough warnings
+
+         LDFLAGS : ''
+                  - Linker flags
+
+  LIBSDL_VERSION : '2'
+                  - Version of the SDL library "1" or "2"
+
+      PYTHON_BIN : 'python3'
+                  - Path/name of python interpreter
+
+            SWIG : 'swig'
+                  - Simplified Wrapper and Interface Generator
+
+   PYTHON_CONFIG : 'python3-config'
+                  - Python config helper
+
+      PYTHON_VER : '3.12'
+                  - Python version (derived from python config)
+
+    include_path : ''
+                  - Path to the system headers
+
+          prefix : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim'
+                  - Installation prefix
+
+          bindir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/bin'
+                  - Where to install binaries
+
+          libdir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/lib'
+                  - Where to install libraries
+
+      includedir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/include'
+                  - Where to install headers
+
+          mandir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/share/man'
+                  - Where to install man pages
+
+          docdir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/share/doc/'
+                  - Where to install documentation
+
+         infodir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/share/info'
+                  - Where to install info pages
+
+         datadir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/share'
+                  - Where to place readonly arch independend datafiles
+
+      sysconfdir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/etc'
+                  - Where to place configuration
+
+   localstatedir : '/workspaces/gfxprim-gfxprim/dev/install/gfxprim/local/var/'
+                  - Where to place runtime modified datafiles
+
+           build : ''
+                  - WARNING not used
+
+            host : ''
+                  - WARNING not used
+
+     static-libs : 'yes'
+                  - Build static libs
+
+    dynamic-libs : 'yes'
+                  - Build dynamic libs
+
+     build-tests : 'yes'
+                  - Build tests
+
+     build-demos : 'yes'
+                  - Build demos
+
+              os : 'linux'
+                  - OS to build the library for
+
+Libraries to link against
+-------------------------
+          libpng : Enabled
+                  - Portable Network Graphics Library
+
+          libsdl : Enabled
+                  - Simple Direct Media Layer
+
+            jpeg : Enabled
+                  - Library to load, handle and manipulate images in the JPEG format
+
+            webp : Enabled
+                  - A lossy image compression format
+
+            heif : Disabled
+                  - A HEIF file format.
+
+        openjpeg : Disabled
+                  - An open-source JPEG 2000 library
+
+          giflib : Enabled
+                  - Library to handle, display and manipulate GIF images
+
+            tiff : Enabled
+                  - Tag Image File Format (TIFF) library
+
+            zlib : Enabled
+                  - Standard (de)compression library
+
+      libarchive : Disabled
+                  - http://www.libarchive.org/
+
+       libXrandr : Enabled
+                  - Xrandr library
+
+          libX11 : Enabled
+                  - X11 library
+
+          libxcb : Disabled
+                  - XCB library
+
+ xcb-util-errors : Disabled
+                  - XCB errors library
+
+           X_SHM : Enabled
+                  - MIT-SHM X Extension
+
+           aalib : Disabled
+                  - Portable ascii art GFX library
+
+        freetype : Enabled
+                  - A high-quality and portable font engine
+
+      fontconfig : Enabled
+                  - A library for configuring and customizing font access
+
+              dl : Enabled
+                  - Dynamic linker
+
+            V4L2 : Enabled
+                  - Video for linux 2
+
+         pthread : Enabled
+                  - Posix Threads
+
+            mmap : Enabled
+                  - mmap() call
+
+       drm/drm.h : Enabled
+                  - an UAPI drm/drm.h header
+
+    libdrm/drm.h : Enabled
+                  - fallback for UAPI drm.h in libdrm/drm.h
+
+       xkbcommon : Enabled
+                  - Keymap handling library for toolkits and window systems
+
+         wayland : Enabled
+                  - Wayland windowing system
+
+       backtrace : Enabled
+                  - C stack trace writeout
+
+Config 'config.h' written
+Config 'config.gen.mk' written
