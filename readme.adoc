@@ -1,0 +1,120 @@
+= gfxprim
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+
+== gfxprim
+
+http://gfxprim.ucw.cz/
+
+https://github.com/gfxprim/gfxprim
+
+https://github.com/hghpublic/gfxprim-gfxprim
+
+Examples::
+http://gfxprim.ucw.cz/examples.html
+
+
+=== build
+
+----
+./configure
+make
+make install
+----
+
+----
+./configure --prefix=$WORKSPACE_ROOT/install/gfxprim --PYTHON_BIN="python3" --PYTHON_CONFIG="python3-config" > dev/logs/configure.log 2>&1
+make > dev/logs/make.log 2>&1
+sudo make install > dev/logs/make-install.log 2>&1
+----
+
+== demos
+
+[source, shell]
+----
+./gp_run.sh ./demos/c_simple/backend_cursor
+./gp_run.sh ./demos/c_simple/SDL2_glue
+----
+
+[source, shell]
+----
+❯ ./dev/scripts/build.sh > ./dev/logs/build.sh.log 2<&1
+❯ ./dev/scripts/run.sh > ./dev/logs/run.sh.log 2<&1
+----
+
+=== bogoman
+
+[source, shell]
+----
+❯ LD_LIBRARY_PATH="$WORKSPACE_ROOT"/dev/install/gfxprim/lib ./bogoman
+DEBUG 1:bogoman_loader.c:bogoman_load:218:
+        Have map 21x8
+/---+-+---\    /----\
+|   | |   |    | $  |
+|         \----/    |
+|> E   @          (<|
++--M----------------+
+|           M       |
+|^v        |$|$|$|  |
+\----------+-+-+-+--/
+Player at 7x3 diamonds total 4
+----
+
+=== grinder
+
+[source, shell]
+----
+❯ ./grinder $WORKSPACE_ROOT/dev/resources/images/ball.ppm
+Processing '/workspaces/gfxprim-gfxprim/dev/resources/images/ball.ppm' -> 'out_001.ppm'
+----
+
+=== particle
+
+[source, shell]
+----
+❯ LD_LIBRARY_PATH="$WORKSPACE_ROOT"/dev/install/gfxprim/lib ./particle_demo
+----
+
+=== py_simple
+
+[source, shell]
+----
+❯ ./runpytest.sh blit.py $WORKSPACE_ROOT/dev/resources/images/ball.ppm
+----
+
+
+=== spiv
+
+[source, shell]
+----
+❯ ./spiv $WORKSPACE_ROOT/dev/resources/images/ball.ppm
+----
+
+=== ttfimg
+
+[source, shell]
+----
+❯ LD_LIBRARY_PATH="$WORKSPACE_ROOT"/dev/install/gfxprim/lib ./ttf2img
+usage: ttf2img -f font.ttf -i file.png -s string -l size [-d debug_level]
+
+./ttf2img -f $WORKSPACE_ROOT/dev/resources/fonts/Roboto/Roboto.ttf -i Roboto.out.png
+----
+
+=== Resize window
+
+----
+❯ wmctrl -r "Disable" -e 0,0,0,640,480
+----
