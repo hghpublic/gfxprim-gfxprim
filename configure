@@ -693,7 +693,7 @@ if __name__ ==  '__main__':
 
     basic_checks(cfg);
 
-    cfg['CFLAGS'][0] += " -std=gnu99";
+    cfg['CFLAGS'][0] += " -std=gnu23";
 
     l.check()
     l.print_summary()
