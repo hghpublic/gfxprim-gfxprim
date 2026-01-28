@@ -93,8 +93,8 @@ and self.thisown.") gp_pixmap;
 
 %extend gp_pixmap {
   ~gp_pixmap() {
-    GP_DEBUG(2, "[wrapper] gp_pixmap_free (%dx%d raw, free_pixels:%d)",
-      $self->w, $self->h, $self->free_pixels);
+    GP_DEBUG(2, "[wrapper] gp_pixmap_free (%dx%d raw)",
+      $self->w, $self->h);
     gp_pixmap_free($self);
   }
   gp_pixmap(gp_coord w, gp_coord h, gp_pixel_type typeno) {
