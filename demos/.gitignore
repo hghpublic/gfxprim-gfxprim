@@ -1,0 +1,4 @@
+out.*
+*.out.*
+out_*.ppm
+test.txt
