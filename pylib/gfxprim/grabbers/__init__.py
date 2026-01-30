@@ -42,9 +42,9 @@ def _init(module):
   from ..utils import import_members
   import_members(c_grabbers, module, sub=strip_gp,
     exclude=[
-      '^gfxprim$',
-      '^\w+_swigregister$',
-      '^_\w+$'])
+      r'^gfxprim$',
+      r'^\w+_swigregister$',
+      r'^_\w+$'])
 
 _init(locals())
 del _init

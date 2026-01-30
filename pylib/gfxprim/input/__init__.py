@@ -14,9 +14,9 @@ def _init(module):
   # Functions
   import_members(c_input, module, sub=strip_GP,
     exclude=[
-      '^gfxprim$',
-      '^\w+_swigregister$',
-      '^_\w+$'])
+      r'^gfxprim$',
+      r'^\w+_swigregister$',
+      r'^_\w+$'])
 
 _init(locals())
 del _init
