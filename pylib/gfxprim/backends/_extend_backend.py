@@ -34,7 +34,8 @@ def extend_backend(_backend):
     "Poll the backend for events."
     ev = c_input.gp_event()
 
-    if c_backends.gp_backend_poll_event(self, ev) != 0:
+    # FIXME: workaround for gp_backend_poll_event not defined
+    if c_backends.gp_backend_poll(self) != 0:
         return ev
 
     return None
