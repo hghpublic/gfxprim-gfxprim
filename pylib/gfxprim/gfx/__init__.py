@@ -38,9 +38,9 @@ def _init(module):
   for name in [
       'arc_segment', 'circle', 'ellipse', 'fill_circle', 'fill_ellipse',
       'fill_rect', 'fill_ring',
-      'fill_tetragon', 'fill_triangle', 'hline', 'hline_aa', 'line', 'line_aa',
-      'putpixel_aa', 'rect', 'ring', 'tetragon',
-      'triangle', 'vline', 'vline_aa']:
+      'fill_tetragon', 'fill_triangle', 'hline', 'line',
+      'rect', 'ring', 'tetragon',
+      'triangle', 'vline']:
     extend_submodule(GfxSubmodule, name, c_gfx.__getattribute__('gp_' + name))
 
   @extend(GfxSubmodule)
