@@ -72,7 +72,8 @@ def main():
             if (ev is None):
                 break
 
-            input.event_dump(ev)
+            # FIXME: workaround for event_dump not defined
+            input.ev_dump(ev)
 
             if (ev.type == input.EV_KEY and ev.val.val == input.KEY_ESC):
                sys.exit(0)
