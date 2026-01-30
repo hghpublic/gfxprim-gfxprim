@@ -27,8 +27,8 @@ void gp_fill_triangle(gp_pixmap *pixmap, gp_coord x0, gp_coord y0,
                       gp_coord x1, gp_coord y1,
                       gp_coord x2, gp_coord y2, gp_pixel pixel);
 
-void gp_fill_triangle_raw(gp_pixmap *pixmap, gp_coord x0, gp_coord y0,
-                          gp_coord x1, gp_coord y1,
-                          gp_coord x2, gp_coord y2, gp_pixel pixel);
+// void gp_fill_triangle_raw(gp_pixmap *pixmap, gp_coord x0, gp_coord y0,
+//                           gp_coord x1, gp_coord y1,
+//                           gp_coord x2, gp_coord y2, gp_pixel pixel);
 
 #endif /* GP_TRIANGLE_H */
